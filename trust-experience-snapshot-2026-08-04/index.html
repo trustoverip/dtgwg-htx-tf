@@ -1,0 +1,1077 @@
+<!doctype html>
+<html lang="en" data-live-url="https://platform.validant.ai/trust-experience">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Human Trust Experience — Explorer (snapshot 2026-08-04)</title>
+<meta name="description" content="A static, self-contained snapshot of the validant Human Trust Experience explorer: a gallery of best-practice screens for trust moments, with screenshots bundled.">
+<style>
+:root{
+  --bg:#ffffff; --fg:#1a1d22; --muted:#5b6470; --faint:#8A95A3; --border:#e5e7eb;
+  --card:#fafafa; --card2:#f4f5f7; --navy:#2e4057; --teal:#3e6b66; --coral:#e8836a;
+  --terra:#b4532e; --gold:#b0842f; --accent:#3b64e0; --maxw:900px;
+}
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#14161a; --fg:#e8eaed; --muted:#9aa1ab; --faint:#767d87; --border:#2a2e35;
+    --card:#1b1e24; --card2:#20242b; }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font-family:"Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.55;font-size:15px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+h1{font-size:30px;font-weight:800;letter-spacing:-.02em;margin:.2em 0}
+h2{font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;
+  margin:56px 0 18px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+h3{font-size:15px;font-weight:700;margin:0 0 6px}
+p{margin:.4em 0}
+.kicker{font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.lead{color:var(--muted);max-width:640px}
+.muted{color:var(--muted)}
+.small{font-size:12px}
+.mono{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
+.card{border:1px solid var(--border);background:var(--card);padding:16px;border-radius:2px}
+.grid{display:grid;gap:12px}
+.g2{grid-template-columns:1fr 1fr}
+@media(max-width:680px){.g2{grid-template-columns:1fr}}
+.badge{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--border);
+  padding:2px 7px;font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;border-radius:2px}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+.sq{width:9px;height:9px;display:inline-block}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+/* snapshot banner */
+.snap{position:sticky;top:0;z-index:50;background:var(--terra);color:#fff;font-size:12.5px}
+.snap .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:8px 20px}
+.snap a{color:#fff;text-decoration:underline;font-weight:600}
+.snap b{font-weight:700}
+header.hero{padding:30px 0 6px}
+.principle{border:1px solid var(--border);border-bottom:0;padding:12px 14px;background:var(--card)}
+.principle:last-child{border-bottom:1px solid var(--border)}
+.principle .line{display:flex;gap:10px;align-items:baseline}
+.principle .n{color:var(--faint);font-size:11px}
+.principle .t{font-weight:600;font-size:13.5px}
+.principle .detail{color:var(--fg);opacity:.82;font-size:13px;margin-top:8px;padding-left:26px}
+.principle .refs{list-style:none;margin:8px 0 0;padding:0 0 0 26px}
+.principle .refs li{color:var(--muted);font-size:11.5px;line-height:1.35}
+.moment{border:1px solid var(--border);background:var(--card);padding:14px}
+.moment .top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.moment .num{display:inline-grid;place-items:center;width:24px;height:24px;border:1px solid var(--border);
+  font-size:11px;font-weight:700;font-family:"JetBrains Mono",monospace}
+.moment .q{color:var(--fg);opacity:.72;font-size:12.5px;margin-top:4px}
+.moment .def{color:var(--muted);font-size:12px;margin-top:8px}
+.moment .meta{color:var(--muted);font-size:11px;margin-top:10px;display:flex;gap:12px;flex-wrap:wrap}
+table{border-collapse:collapse;width:100%;font-size:12.5px}
+th,td{border:1px solid var(--border);padding:6px 8px;text-align:left;vertical-align:top}
+th{background:var(--card2);font-weight:700}
+.matrix td{text-align:center}
+.scroll{overflow-x:auto;border:1px solid var(--border)}
+.scroll table{border:0}
+.bp{border:1px solid var(--border);background:var(--card);padding:14px;margin-bottom:10px}
+.bp .h{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.bp .rating{background:var(--fg);color:var(--bg);font-size:11px;font-weight:700;padding:2px 7px}
+.kv{color:var(--muted);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.exgroup{border:1px solid var(--border);background:var(--card);margin-bottom:10px}
+.exgroup .gh{display:flex;gap:8px;align-items:center;border-bottom:1px solid var(--border);padding:8px 12px}
+.exgroup ul{list-style:none;margin:0;padding:0}
+.exgroup li{border-top:1px solid var(--border);padding:10px 12px}
+.exgroup li:first-child{border-top:0}
+.rule{border-top:1px solid var(--border);padding:12px}
+.rule:first-child{border-top:0}
+.rule blockquote{border-left:2px solid var(--border);margin:6px 0;padding:2px 10px;color:var(--muted);
+  font-style:italic;font-size:12px}
+details.sec{border:1px solid var(--border);margin:12px 0;border-radius:2px;overflow:hidden}
+details.sec>summary{cursor:pointer;list-style:none;background:var(--card2);padding:12px 16px;font-weight:700;
+  font-size:13px;text-transform:uppercase;letter-spacing:.1em}
+details.sec>summary::-webkit-details-marker{display:none}
+details.sec>summary:before{content:"▸ ";color:var(--muted)}
+details.sec[open]>summary:before{content:"▾ "}
+details.sec .body{padding:16px}
+.ap{display:flex;gap:10px;border:1px solid var(--border);background:var(--card);padding:10px}
+.ap .id{background:var(--terra);color:#fff;font-size:9px;padding:2px 5px;height:fit-content;font-family:monospace}
+.live{font:inherit;cursor:pointer;background:none;border:0;border-bottom:1px dashed var(--accent);
+  color:var(--accent);padding:0;font-size:inherit}
+.icefig{border:1px solid var(--border);background:var(--card);padding:16px;text-align:center}
+.icefig img{max-width:100%;height:auto}
+footer.doc{margin:56px 0 40px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:12px}
+/* interactivity modal */
+.ovl{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:center;
+  justify-content:center;z-index:130;padding:20px}
+.ovl.on{display:flex}
+.modal{background:var(--bg);color:var(--fg);border:1px solid var(--border);max-width:440px;padding:22px;border-radius:3px}
+.modal h3{font-size:16px}
+.modal .cta{display:inline-block;margin-top:14px;background:var(--fg);color:var(--bg);
+  padding:9px 14px;font-weight:600;font-size:13px}
+.modal .cta:hover{text-decoration:none;opacity:.9}
+.modal .x{float:right;cursor:pointer;border:0;background:none;font-size:20px;line-height:1;color:var(--muted)}
+/* top nav (shared across the two pages) */
+.nav{border-bottom:1px solid var(--border);background:var(--bg)}
+.nav .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;padding:10px 20px;max-width:var(--maxwide)}
+.nav .brand{font-weight:800;letter-spacing:-.01em;margin-right:8px}
+.nav a{color:var(--muted);font-weight:600;font-size:13px;padding:4px 2px;border-bottom:2px solid transparent}
+.nav a:hover{color:var(--fg);text-decoration:none}
+.nav a.on{color:var(--fg);border-bottom-color:var(--fg)}
+.nav .spacer{margin-left:auto}
+.nav .ext{color:var(--accent)}
+/* gallery (index.html) */
+.wide{max-width:1180px;margin:0 auto;padding:0 20px}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 6px;align-items:center}
+.filters input,.filters select{font:inherit;font-size:13px;padding:7px 10px;border:1px solid var(--border);
+  background:var(--card);color:var(--fg);border-radius:2px}
+.filters input{flex:1;min-width:200px}
+.gcount{color:var(--muted);font-size:12px;margin:4px 0 16px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.tile{border:1px solid var(--border);background:var(--card);display:flex;flex-direction:column;text-align:left;
+  cursor:pointer;padding:0;font:inherit;color:inherit;border-radius:2px;overflow:hidden}
+.tile:hover{border-color:var(--fg)}
+.tile .shot{height:168px;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--border);
+  background:#f2f3f5;overflow:hidden}
+@media (prefers-color-scheme:dark){.tile .shot{background:#22262d}}
+.tile .shot img{max-width:100%;max-height:100%;object-fit:contain}
+.tile .b{padding:11px 12px;display:flex;flex-direction:column;gap:6px;flex:1}
+.tile .t{font-weight:700;font-size:13px;line-height:1.3}
+.tile .src{font-size:11px;color:var(--muted)}
+.tile .src b{color:var(--fg);font-weight:600}
+.tile .chips{margin-top:auto;display:flex;flex-wrap:wrap;gap:4px;padding-top:2px}
+.vbadge{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:2px 6px;color:#fff;border-radius:2px}
+/* lightbox (screen detail) */
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.72);display:none;z-index:110;padding:16px;overflow:auto}
+.lb.on{display:block}
+.lb .box{max-width:860px;margin:16px auto;background:var(--bg);border:1px solid var(--border);border-radius:3px}
+.lb .lbimg{background:#0d0f12;display:flex;align-items:center;justify-content:center;max-height:62vh;overflow:auto}
+.lb .lbimg img{max-width:100%;max-height:62vh;object-fit:contain}
+.lb .lbb{padding:16px 20px}
+.lb .x{float:right;cursor:pointer;border:0;background:none;font-size:22px;color:var(--muted);line-height:1}
+.wu{font-size:13px;color:var(--fg);opacity:.85;line-height:1.5;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="snap"><div class="wrap wide">
+  <b>Static snapshot &middot; 4 August 2026 at 17:51.</b>
+  <span>Frozen copy; ratings, contributing and removal live on the platform.</span>
+  <a href="https://platform.validant.ai/trust-experience" target="_blank" rel="noopener noreferrer">Open the live explorer &rarr;</a>
+</div></div>
+<div class="nav"><div class="wrap wide">
+    <span class="brand">Human Trust Experience</span>
+    <a href="index.html" class="on">Screens</a>
+    <a href="research.html">Research findings</a>
+    <span class="spacer"></span>
+    <span class="small muted">Snapshot 2026-08-04</span>
+    <a class="ext" href="https://platform.validant.ai/trust-experience" target="_blank" rel="noopener noreferrer">Open live &rarr;</a>
+  </div></div>
+<div class="wide">
+  <header class="hero">
+    <div class="kicker">Digital Trust · Open library</div>
+    <h1>Human Trust Experience</h1>
+    <p class="lead">A curated, open gallery of best-practice screens: how good products solve trust moments in the
+      user journey. This is a self-contained snapshot; all 74 screens and their screenshots are
+      bundled. See the <a href="research.html">research findings</a> for the model behind it.</p>
+  </header>
+  <div class="filters">
+    <input id="q" type="search" placeholder="Search screens, brands, write-ups…" aria-label="Search screens">
+    <select id="mf" aria-label="Filter by trust moment"><option value="">All trust moments</option><option value="#tm-disclosure">Consent &amp; Disclosure Decision</option><option value="#tm-counterparty">Counterparty Identification &amp; Verification</option><option value="#tm-custody">Custody &amp; Recovery Setup</option><option value="#tm-issuance">Enrollment / Issuance</option><option value="#tm-execution">Execution &amp; Confirmation</option><option value="#tm-repair">Incident, Recovery &amp; Revocation</option><option value="#tm-orientation">Invitation &amp; Onboarding</option><option value="#tm-comprehension">Request Comprehension</option><option value="#tm-retrospection">Retrospection &amp; Portfolio</option></select>
+    <select id="of" aria-label="Filter by origin"><option value="">All origins</option><option value="Aries VCR">Aries VCR</option><option value="BC Wallet">BC Wallet</option><option value="Bifold">Bifold</option><option value="C2PA">C2PA</option><option value="C2PA UX Guidance">C2PA UX Guidance</option><option value="CAI Verify">CAI Verify</option><option value="EUDI ARF">EUDI ARF</option><option value="EUDI TS1">EUDI TS1</option><option value="IT Wallet">IT Wallet</option><option value="Login.gov">Login.gov</option><option value="NIST NCCoE mDL">NIST NCCoE mDL</option><option value="NL Wallet">NL Wallet</option><option value="swiyu">swiyu</option></select>
+  </div>
+  <div class="gcount" id="cnt">74 screens</div>
+  <div class="gallery"><button class="tile" data-i="0" data-moment="#tm-comprehension" data-origin="C2PA UX Guidance" data-search="the depth-versus-breadth spectrum for summary design c2pa ux guidance l2 provenance summaries **the depth-versus-breadth spectrum for summary design.** conceptually the most interesting figure in the set
+
+**practices demonstrated**
+- p-29 (context): anti-pattern - overloading: do not bury the protective choice under an avalanche of options. — the explicit depth-vs-breadth tradeoff - the design decision that prevents overloading.
+
+from c2pa ux guidance. request comprehension">
+      <span class="shot"><img loading="lazy" src="images/c2pa-ux-guidance--fig07-the-depth-versus-breadth-spectrum-for-summary-de.png" alt="The depth-versus-breadth spectrum for summary design"></span>
+      <span class="b">
+        <span class="t">The depth-versus-breadth spectrum for summary design</span>
+        <span class="src"><b>C2PA UX Guidance</b> &middot; <a href="https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Request Comprehension</span><span class="badge">L2 Provenance Summaries</span></span>
+      </span>
+    </button><button class="tile" data-i="1" data-moment="#tm-orientation" data-origin="EUDI TS1" data-search="wallet welcome screen carrying the eudi trust mark with trusted-list and information links eudi ts1 relying party trust **wallet welcome screen carrying the eudi trust mark with trusted-list and information links.** the only official trust-mark-in-context mockup. links out to the wallet provider trusted list and an information page, i.e. the mark is a navigation affordance, not just a badge. concept image per the spec.
+
+**practices demonstrated**
+- p-03 (exemplar): give the user a way to tell your genuine authentication screen from a spoof, such as a personalised element only you could know. — trust mark plus links to the provider trusted list.
+
+from eudi ts1. invitation &amp; onboarding">
+      <span class="shot"><img loading="lazy" src="images/eudi-ts1--rel02-wallet-welcome-screen-carrying-the-eudi-trust-mark-w.png" alt="Wallet welcome screen carrying the EUDI Trust Mark with trusted-list and information links"></span>
+      <span class="b">
+        <span class="t">Wallet welcome screen carrying the EUDI Trust Mark with trusted-list and information links</span>
+        <span class="src"><b>EUDI TS1</b> &middot; <a href="https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Invitation &amp; Onboarding</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Relying Party Trust</span></span>
+      </span>
+    </button><button class="tile" data-i="2" data-moment="#tm-disclosure" data-origin="NL Wallet" data-search="stop-and-confirm sheet when abandoning disclosure nl wallet wallet consent disclosure **stop-and-confirm sheet when abandoning disclosure.** a genuine, non-punitive refusal path. korir et al. found users felt limited ability to refuse; this is the counter-design.
+
+**practices demonstrated**
+- p-12 (exemplar): give continuing and declining equal visual prominence and equal path length. — a genuine, non-punitive refusal path given real prominence.
+- p-14 (exemplar): cap the exit path at one friction screen, then confirm. — exactly one friction screen on the exit path.
+- p-32 (exemplar): anti-pattern - obstructing: do not make the protective action hard or impossible to complete. — the opposite of a dead end - abandonment is a supported, dignified path.
+
+from nl wallet. consent &amp; disclosure decision">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--wal13-stop-and-confirm-sheet-when-abandoning-disclosure.png" alt="Stop-and-confirm sheet when abandoning disclosure"></span>
+      <span class="b">
+        <span class="t">Stop-and-confirm sheet when abandoning disclosure</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Consent &amp; Disclosure Decision</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Wallet Consent Disclosure</span></span>
+      </span>
+    </button><button class="tile" data-i="3" data-moment="#tm-orientation" data-origin="EUDI ARF" data-search="sharing channel chooser: qr code versus nfc proximity eudi arf proximity cross device **sharing channel chooser: qr code versus nfc proximity.**
+
+from eudi arf. invitation &amp; onboarding">
+      <span class="shot"><img loading="lazy" src="images/eudi-arf--pro01-sharing-channel-chooser-qr-code-versus-nfc-proximity.png" alt="Sharing channel chooser: QR code versus NFC proximity"></span>
+      <span class="b">
+        <span class="t">Sharing channel chooser: QR code versus NFC proximity</span>
+        <span class="src"><b>EUDI ARF</b> &middot; <a href="https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Invitation &amp; Onboarding</span><span class="badge">Proximity Cross Device</span></span>
+      </span>
+    </button><button class="tile" data-i="4" data-moment="#tm-disclosure" data-origin="EUDI ARF" data-search="relying-party attribute request with mandatory versus optional split and trusted-rp explainer eudi arf wallet consent disclosure **relying-party attribute request with mandatory versus optional split and trusted-rp explainer.** the single most important figure in this wave. optional fields are collapsed and unchecked by default, mandatory fields are non-deselectable, and the verified badge opens a definition of what 'trusted' means. direct analogue of c2pa fig 6 but for identity.
+
+**practices demonstrated**
+- p-01 (exemplar): name the relying party and list exactly what will be shared before the user authorises, every time. — relying party named at the top with a verified badge, attributes listed beneath - the rule's exact ordering.
+- p-08 (exemplar): never bundle unrelated permissions into the transaction the user came to complete. — mandatory and optional are visibly separated, so nothing unrelated rides along with the required set.
+- p-09 (exemplar): default every optional data setting to the most protective value. if you deviate, you must be able to justify it. — optional fields collapsed and unchecked by default - the canonical illustration of high-privacy defaults.
+
+from eudi arf. consent &amp; disclosure decision">
+      <span class="shot"><img loading="lazy" src="images/eudi-arf--wal01-relying-party-attribute-request-with-mandatory-versu.png" alt="Relying-party attribute request with mandatory versus optional split and trusted-RP explainer"></span>
+      <span class="b">
+        <span class="t">Relying-party attribute request with mandatory versus optional split and trusted-RP explainer</span>
+        <span class="src"><b>EUDI ARF</b> &middot; <a href="https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Consent &amp; Disclosure Decision</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Wallet Consent Disclosure</span></span>
+      </span>
+    </button><button class="tile" data-i="5" data-moment="#tm-comprehension" data-origin="EUDI ARF" data-search="confirmation dialogs before consequential actions eudi arf wallet consent disclosure **confirmation dialogs before consequential actions.** compare gov.uk 'interruption pages' and bravo-lillo's inhibitive attractors: friction placed at the decision point.
+
+**practices demonstrated**
+- p-11 (context): ask for consent once, at the party that has the context to explain it. do not re-ask at the credential holder. — confirmation dialogs - legitimate here, but the rule constrains where a second one may appear.
+- p-24 (exemplar): tell the user where the point of no return is, before they cross it. — confirmation immediately before the irreversible step.
+
+from eudi arf. request comprehension">
+      <span class="shot"><img loading="lazy" src="images/eudi-arf--wal05-confirmation-dialogs-before-consequential-actions.png" alt="Confirmation dialogs before consequential actions"></span>
+      <span class="b">
+        <span class="t">Confirmation dialogs before consequential actions</span>
+        <span class="src"><b>EUDI ARF</b> &middot; <a href="https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Request Comprehension</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Wallet Consent Disclosure</span></span>
+      </span>
+    </button><button class="tile" data-i="6" data-moment="#tm-orientation" data-origin="NL Wallet" data-search="first-run introduction nl wallet wallet onboarding issuance **first-run introduction.** sartor et al. found ssi wallets fail to make their novelty and benefits apparent; onboarding is where that is won or lost.
+
+**practices demonstrated**
+- p-48 (context): cut screens that do not carry a decision, and rewrite the rest in plain language - then measure completion. — onboarding - where screens that carry no decision accumulate.
+
+from nl wallet. invitation &amp; onboarding">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--wal15-first-run-introduction.png" alt="First-run introduction"></span>
+      <span class="b">
+        <span class="t">First-run introduction</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Invitation &amp; Onboarding</span><span class="badge">Wallet Onboarding Issuance</span></span>
+      </span>
+    </button><button class="tile" data-i="7" data-moment="#tm-comprehension" data-origin="Bifold" data-search="icon plus text pairing bifold accessibility and inclusion **icon plus text pairing.** porter felt et al. found chrome's padlock icon alone was correctly read by only 40.1% of users, and the fix was adding words. icon-plus-text is the accessible default and the comprehension default at once.
+
+**practices demonstrated**
+- p-40 (exemplar): never use an icon alone where a text label carries the meaning. — icon plus text as the default pairing.
+
+from bifold. request comprehension">
+      <span class="shot"><img loading="lazy" src="images/bifold--acc10-icon-plus-text-pairing.png" alt="Icon plus text pairing"></span>
+      <span class="b">
+        <span class="t">Icon plus text pairing</span>
+        <span class="src"><b>Bifold</b> &middot; <a href="https://github.com/openwallet-foundation/bifold-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Request Comprehension</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Accessibility And Inclusion</span></span>
+      </span>
+    </button><button class="tile" data-i="8" data-moment="#tm-issuance" data-origin="EUDI ARF" data-search="relying-party login with eudi wallet, mobile eudi arf wallet onboarding issuance **relying-party login with eudi wallet, mobile.**
+
+**practices demonstrated**
+- p-21 (exemplar): authentication via redirect must take no more steps than opening your app directly. — the redirect entry point.
+
+from eudi arf. enrollment / issuance">
+      <span class="shot"><img loading="lazy" src="images/eudi-arf--wal01-relying-party-login-with-eudi-wallet-mobile.png" alt="Relying-party login with EUDI wallet, mobile"></span>
+      <span class="b">
+        <span class="t">Relying-party login with EUDI wallet, mobile</span>
+        <span class="src"><b>EUDI ARF</b> &middot; <a href="https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Enrollment / Issuance</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Wallet Onboarding Issuance</span></span>
+      </span>
+    </button><button class="tile" data-i="9" data-moment="#tm-orientation" data-origin="C2PA UX Guidance" data-search="l2 interaction patterns for disclosure, accordion behavior c2pa ux guidance ai content disclosure **l2 interaction patterns for disclosure, accordion behavior.**
+
+**practices demonstrated**
+- p-36 (exemplar): deliver short contextual explanations at the decision point, in addition to - not instead of - the full policy. — accordion disclosure - detail on request, not by default.
+
+from c2pa ux guidance. invitation &amp; onboarding">
+      <span class="shot"><img loading="lazy" src="images/c2pa-ux-guidance--fig26-l2-interaction-patterns-for-disclosure-accordion.png" alt="L2 interaction patterns for disclosure, accordion behavior"></span>
+      <span class="b">
+        <span class="t">L2 interaction patterns for disclosure, accordion behavior</span>
+        <span class="src"><b>C2PA UX Guidance</b> &middot; <a href="https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Invitation &amp; Onboarding</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Ai Content Disclosure</span></span>
+      </span>
+    </button><button class="tile" data-i="10" data-moment="#tm-orientation" data-origin="C2PA UX Guidance" data-search="the journey from l2 into l3 c2pa ux guidance l3 detail and repair **the journey from l2 into l3.**
+
+**practices demonstrated**
+- p-36 (exemplar): deliver short contextual explanations at the decision point, in addition to - not instead of - the full policy. — the drill-down path from summary to full detail.
+
+from c2pa ux guidance. invitation &amp; onboarding">
+      <span class="shot"><img loading="lazy" src="images/c2pa-ux-guidance--fig22-the-journey-from-l2-into-l3.png" alt="The journey from L2 into L3"></span>
+      <span class="b">
+        <span class="t">The journey from L2 into L3</span>
+        <span class="src"><b>C2PA UX Guidance</b> &middot; <a href="https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Invitation &amp; Onboarding</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">L3 Detail And Repair</span></span>
+      </span>
+    </button><button class="tile" data-i="11" data-moment="#tm-comprehension" data-origin="C2PA" data-search="full progressive disclosure ui carrying ai labels c2pa ai content disclosure **progressive disclosure ui with labeling.**
+
+from the c2pa user experience guidance for implementers. request comprehension">
+      <span class="shot"><img loading="lazy" src="images/ai-content-disclosure--c2pa-fig23.png" alt="Full progressive disclosure UI carrying AI labels"></span>
+      <span class="b">
+        <span class="t">Full progressive disclosure UI carrying AI labels</span>
+        <span class="src"><b>C2PA</b> &middot; <a href="https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Request Comprehension</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">AI content disclosure</span></span>
+      </span>
+    </button><button class="tile" data-i="12" data-moment="#tm-orientation" data-origin="NIST NCCoE mDL" data-search="initial browser qr code nist nccoe mdl mdl usability evidence **initial browser qr code.** half of the study's dominant failure mode: after roughly 40 seconds the qr expired and regenerated as a different code, so users could not tell whether to repeat the step or switch credential.
+
+**practices demonstrated**
+- p-23 (antipattern): cross-device handoff must not require the user to retype anything. — first qr shown to the user.
+
+from nist nccoe mdl. invitation &amp; onboarding">
+      <span class="shot"><img loading="lazy" src="images/nccoe-mdl--mdl06-initial-browser-qr-code.png" alt="Initial browser QR code"></span>
+      <span class="b">
+        <span class="t">Initial browser QR code</span>
+        <span class="src"><b>NIST NCCoE mDL</b> &middot; <a href="https://github.com/usnistgov/nccoe-mdl-project-static-website" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Invitation &amp; Onboarding</span><span class="vbadge" style="background:#b4532e">Anti-pattern</span><span class="badge">Mdl Usability Evidence</span></span>
+      </span>
+    </button><button class="tile" data-i="13" data-moment="#tm-orientation" data-origin="C2PA UX Guidance" data-search="the four disclosure levels, l1 through l4, as a single diagram c2pa ux guidance disclosure model **the four disclosure levels, l1 through l4, as a single diagram.** anchor image for the whole gallery
+
+from c2pa ux guidance. invitation &amp; onboarding">
+      <span class="shot"><img loading="lazy" src="images/c2pa-ux-guidance--fig01-the-four-disclosure-levels-l1-through-l4-as-a-si.png" alt="The four disclosure levels, L1 through L4, as a single diagram"></span>
+      <span class="b">
+        <span class="t">The four disclosure levels, L1 through L4, as a single diagram</span>
+        <span class="src"><b>C2PA UX Guidance</b> &middot; <a href="https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Invitation &amp; Onboarding</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Disclosure Model</span></span>
+      </span>
+    </button><button class="tile" data-i="14" data-moment="#tm-custody" data-origin="C2PA UX Guidance" data-search="manifest storage settings, local versus remote, with the privacy tradeoff surfaced c2pa ux guidance creator control **manifest storage settings, local versus remote, with the privacy tradeoff surfaced.** rare example of a storage-location choice rendered as a user decision
+
+**practices demonstrated**
+- p-09 (exemplar): default every optional data setting to the most protective value. if you deviate, you must be able to justify it. — a storage-location default surfaced as an explicit user decision with the privacy tradeoff stated.
+
+from c2pa ux guidance. custody &amp; recovery setup">
+      <span class="shot"><img loading="lazy" src="images/c2pa-ux-guidance--fig31-manifest-storage-settings-local-versus-remote-wi.png" alt="Manifest storage settings, local versus remote, with the privacy tradeoff surfaced"></span>
+      <span class="b">
+        <span class="t">Manifest storage settings, local versus remote, with the privacy tradeoff surfaced</span>
+        <span class="src"><b>C2PA UX Guidance</b> &middot; <a href="https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Custody &amp; Recovery Setup</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Creator Control</span></span>
+      </span>
+    </button><button class="tile" data-i="15" data-moment="#tm-repair" data-origin="NL Wallet" data-search="proximity connection failed nl wallet proximity cross device **proximity connection failed.**
+
+**practices demonstrated**
+- p-23 (context): cross-device handoff must not require the user to retype anything. — the failure state users land in.
+
+from nl wallet. incident, recovery &amp; revocation">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--pro08-proximity-connection-failed.png" alt="Proximity connection failed"></span>
+      <span class="b">
+        <span class="t">Proximity connection failed</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Incident, Recovery &amp; Revocation</span><span class="badge">Proximity Cross Device</span></span>
+      </span>
+    </button><button class="tile" data-i="16" data-moment="#tm-orientation" data-origin="C2PA" data-search="persistent indicator with background c2pa time-based media **l1 indicator should be visible throughout the video, therefore, a background is recommended..**
+
+from the c2pa user experience guidance for implementers. invitation &amp; onboarding">
+      <span class="shot"><img loading="lazy" src="images/time-based-media--c2pa-fig33.png" alt="Persistent indicator with background"></span>
+      <span class="b">
+        <span class="t">Persistent indicator with background</span>
+        <span class="src"><b>C2PA</b> &middot; <a href="https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Invitation &amp; Onboarding</span><span class="badge">Time-based media</span></span>
+      </span>
+    </button><button class="tile" data-i="17" data-moment="#tm-comprehension" data-origin="EUDI ARF" data-search="credential/document presentation layout eudi arf wallet consent disclosure **credential/document presentation layout.**
+
+from eudi arf. request comprehension">
+      <span class="shot"><img loading="lazy" src="images/eudi-arf--wal02-credential-document-presentation-layout.png" alt="Credential/document presentation layout"></span>
+      <span class="b">
+        <span class="t">Credential/document presentation layout</span>
+        <span class="src"><b>EUDI ARF</b> &middot; <a href="https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Request Comprehension</span><span class="badge">Wallet Consent Disclosure</span></span>
+      </span>
+    </button><button class="tile" data-i="18" data-moment="#tm-orientation" data-origin="Bifold" data-search="progress indication during a trust operation bifold accessibility and inclusion **progress indication during a trust operation.** the nccoe study found missing progress feedback left users unsure whether a credential exchange had completed.
+
+**practices demonstrated**
+- p-48 (exemplar): cut screens that do not carry a decision, and rewrite the rest in plain language - then measure completion. — progress feedback; nccoe found its absence left users unsure whether the exchange completed.
+
+from bifold. invitation &amp; onboarding">
+      <span class="shot"><img loading="lazy" src="images/bifold--acc06-progress-indication-during-a-trust-operation.png" alt="Progress indication during a trust operation"></span>
+      <span class="b">
+        <span class="t">Progress indication during a trust operation</span>
+        <span class="src"><b>Bifold</b> &middot; <a href="https://github.com/openwallet-foundation/bifold-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Invitation &amp; Onboarding</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Accessibility And Inclusion</span></span>
+      </span>
+    </button><button class="tile" data-i="19" data-moment="#tm-orientation" data-origin="EUDI ARF" data-search="identification method options: pin, pattern, biometrics, password, otp eudi arf mobile authentication **identification method options: pin, pattern, biometrics, password, otp.**
+
+**practices demonstrated**
+- p-44 (exemplar): always offer more than one route to prove the same thing. — multiple authentication routes offered rather than one mandated.
+
+from eudi arf. invitation &amp; onboarding">
+      <span class="shot"><img loading="lazy" src="images/eudi-arf--mob03-identification-method-options-pin-pattern-biometrics.png" alt="Identification method options: PIN, pattern, biometrics, password, OTP"></span>
+      <span class="b">
+        <span class="t">Identification method options: PIN, pattern, biometrics, password, OTP</span>
+        <span class="src"><b>EUDI ARF</b> &middot; <a href="https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Invitation &amp; Onboarding</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Mobile Authentication</span></span>
+      </span>
+    </button><button class="tile" data-i="20" data-moment="#tm-counterparty" data-origin="NL Wallet" data-search="organisation detail: who is asking and what is known about them nl wallet relying party trust **organisation detail: who is asking and what is known about them.**
+
+**practices demonstrated**
+- p-01 (exemplar): name the relying party and list exactly what will be shared before the user authorises, every time. — the drill-down behind the relying-party name.
+- p-02 (exemplar): display the relying party's trading or brand name - the name the user would recognise - not its legal entity name or client id. — organisation identity rendered for recognition, not for legal precision.
+
+from nl wallet. counterparty identification &amp; verification">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--rel07-organisation-detail-who-is-asking-and-what-is-known.png" alt="Organisation detail: who is asking and what is known about them"></span>
+      <span class="b">
+        <span class="t">Organisation detail: who is asking and what is known about them</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Counterparty Identification &amp; Verification</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Relying Party Trust</span></span>
+      </span>
+    </button><button class="tile" data-i="21" data-moment="#tm-retrospection" data-origin="NL Wallet" data-search="transaction history overview nl wallet transaction history audit **transaction history overview.** the dashboard mandated by eidas 2.0 art. 5a(4), as actually built.
+
+**practices demonstrated**
+- p-16 (exemplar): put the consent dashboard no more than two clicks from home. — the dashboard itself; check its click-depth from home.
+
+from nl wallet. retrospection &amp; portfolio">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--tra01-transaction-history-overview.png" alt="Transaction history overview"></span>
+      <span class="b">
+        <span class="t">Transaction history overview</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Retrospection &amp; Portfolio</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Transaction History Audit</span></span>
+      </span>
+    </button><button class="tile" data-i="22" data-moment="#tm-repair" data-origin="EUDI ARF" data-search="credential expiry warning with renew call-to-action eudi arf recovery revocation errors **credential expiry warning with renew call-to-action.**
+
+**practices demonstrated**
+- p-25 (exemplar): re-confirm long-lived access periodically, and stop accessing data if the user does not respond. — expiry surfaced with a renewal path.
+
+from eudi arf. incident, recovery &amp; revocation">
+      <span class="shot"><img loading="lazy" src="images/eudi-arf--rec01-credential-expiry-warning-with-renew-call-to-action.png" alt="Credential expiry warning with renew call-to-action"></span>
+      <span class="b">
+        <span class="t">Credential expiry warning with renew call-to-action</span>
+        <span class="src"><b>EUDI ARF</b> &middot; <a href="https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Incident, Recovery &amp; Revocation</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Recovery Revocation Errors</span></span>
+      </span>
+    </button><button class="tile" data-i="23" data-moment="#tm-retrospection" data-origin="NL Wallet" data-search="history entry for a cancelled transaction nl wallet transaction history audit **history entry for a cancelled transaction.**
+
+**practices demonstrated**
+- p-20 (exemplar): retain cancelled and expired consents in history, with their original parameters. — cancelled transactions retained in history.
+
+from nl wallet. retrospection &amp; portfolio">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--tra04-history-entry-for-a-cancelled-transaction.png" alt="History entry for a cancelled transaction"></span>
+      <span class="b">
+        <span class="t">History entry for a cancelled transaction</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Retrospection &amp; Portfolio</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Transaction History Audit</span></span>
+      </span>
+    </button><button class="tile" data-i="24" data-moment="#tm-repair" data-origin="NL Wallet" data-search="requested attributes the wallet cannot supply nl wallet wallet consent disclosure **requested attributes the wallet cannot supply.**
+
+**practices demonstrated**
+- p-06 (context): request only the data the service actually needs, and suppress request categories that are irrelevant to the product. — what happens when a request exceeds what the wallet holds.
+
+from nl wallet. incident, recovery &amp; revocation">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--wal11-requested-attributes-the-wallet-cannot-supply.png" alt="Requested attributes the wallet cannot supply"></span>
+      <span class="b">
+        <span class="t">Requested attributes the wallet cannot supply</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Incident, Recovery &amp; Revocation</span><span class="badge">Wallet Consent Disclosure</span></span>
+      </span>
+    </button><button class="tile" data-i="25" data-moment="#tm-orientation" data-origin="C2PA UX Guidance" data-search="provenance summary at four manifests, showing the collapse rule c2pa ux guidance l2 provenance summaries **provenance summary at four manifests, showing the collapse rule.** part of the two/three/four-manifest collapse-rule series (figs 9-11)
+
+**practices demonstrated**
+- p-29 (exemplar): anti-pattern - overloading: do not bury the protective choice under an avalanche of options. — the collapse rule: beyond four items, collapse to a count rather than enumerate.
+- p-47 (exemplar): treat every prompt as spending a finite attention budget, and be able to state what each one buys. — collapse beyond four rather than enumerate everything.
+
+from c2pa ux guidance. invitation &amp; onboarding">
+      <span class="shot"><img loading="lazy" src="images/c2pa-ux-guidance--fig11-provenance-summary-at-four-manifests-showing-the.png" alt="Provenance summary at four manifests, showing the collapse rule"></span>
+      <span class="b">
+        <span class="t">Provenance summary at four manifests, showing the collapse rule</span>
+        <span class="src"><b>C2PA UX Guidance</b> &middot; <a href="https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Invitation &amp; Onboarding</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">L2 Provenance Summaries</span></span>
+      </span>
+    </button><button class="tile" data-i="26" data-moment="#tm-comprehension" data-origin="NL Wallet" data-search="review a credential before adding it to the wallet nl wallet wallet onboarding issuance **review a credential before adding it to the wallet.**
+
+from nl wallet. request comprehension">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--wal13-review-a-credential-before-adding-it-to-the-wallet.png" alt="Review a credential before adding it to the wallet"></span>
+      <span class="b">
+        <span class="t">Review a credential before adding it to the wallet</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Request Comprehension</span><span class="badge">Wallet Onboarding Issuance</span></span>
+      </span>
+    </button><button class="tile" data-i="27" data-moment="#tm-retrospection" data-origin="NL Wallet" data-search="per-credential usage history nl wallet transaction history audit **per-credential usage history.**
+
+**practices demonstrated**
+- p-17 (exemplar): keep a holder-accessible log recording time, what was requested, what was actually presented, and to whom. — same record sliced per credential.
+
+from nl wallet. retrospection &amp; portfolio">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--tra05-per-credential-usage-history.png" alt="Per-credential usage history"></span>
+      <span class="b">
+        <span class="t">Per-credential usage history</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Retrospection &amp; Portfolio</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Transaction History Audit</span></span>
+      </span>
+    </button><button class="tile" data-i="28" data-moment="#tm-issuance" data-origin="EUDI ARF" data-search="relying-party login with eudi wallet, desktop eudi arf wallet onboarding issuance **relying-party login with eudi wallet, desktop.**
+
+**practices demonstrated**
+- p-22 (exemplar): tell the user before the hand-off that they are about to be sent elsewhere, and on return that the session has closed. — desktop hand-off announcement.
+
+from eudi arf. enrollment / issuance">
+      <span class="shot"><img loading="lazy" src="images/eudi-arf--wal02-relying-party-login-with-eudi-wallet-desktop.png" alt="Relying-party login with EUDI wallet, desktop"></span>
+      <span class="b">
+        <span class="t">Relying-party login with EUDI wallet, desktop</span>
+        <span class="src"><b>EUDI ARF</b> &middot; <a href="https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Enrollment / Issuance</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Wallet Onboarding Issuance</span></span>
+      </span>
+    </button><button class="tile" data-i="29" data-moment="#tm-comprehension" data-origin="NL Wallet" data-search="reviewing attributes across multiple cards nl wallet wallet consent disclosure **reviewing attributes across multiple cards.**
+
+**practices demonstrated**
+- p-05 (exemplar): group requested data into named clusters at the top level and let the user drill down to individual fields. do not present a flat list of raw attribute names. — attributes grouped by source credential rather than listed flat.
+
+from nl wallet. request comprehension">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--wal14-reviewing-attributes-across-multiple-cards.png" alt="Reviewing attributes across multiple cards"></span>
+      <span class="b">
+        <span class="t">Reviewing attributes across multiple cards</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Request Comprehension</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Wallet Consent Disclosure</span></span>
+      </span>
+    </button><button class="tile" data-i="30" data-moment="#tm-repair" data-origin="NL Wallet" data-search="session expired during disclosure nl wallet recovery revocation errors **session expired during disclosure.** the nccoe mdl study found qr/session timeout to be the dominant failure mode.
+
+from nl wallet. incident, recovery &amp; revocation">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--rec11-session-expired-during-disclosure.png" alt="Session expired during disclosure"></span>
+      <span class="b">
+        <span class="t">Session expired during disclosure</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Incident, Recovery &amp; Revocation</span><span class="badge">Recovery Revocation Errors</span></span>
+      </span>
+    </button><button class="tile" data-i="31" data-moment="#tm-custody" data-origin="IT Wallet" data-search="revoking an attestation from the wallet it wallet recovery revocation errors **revoking an attestation from the wallet.** user-initiated revocation rendered as a first-class flow rather than a support ticket.
+
+**practices demonstrated**
+- p-13 (exemplar): make withdrawing consent exactly as easy as giving it. — user-initiated revocation as a first-class flow rather than a support ticket.
+
+from it wallet. custody &amp; recovery setup">
+      <span class="shot"><img loading="lazy" src="images/it-wallet--rec07-revoking-an-attestation-from-the-wallet.png" alt="Revoking an attestation from the wallet"></span>
+      <span class="b">
+        <span class="t">Revoking an attestation from the wallet</span>
+        <span class="src"><b>IT Wallet</b> &middot; <a href="https://github.com/italia/eid-wallet-it-docs" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Custody &amp; Recovery Setup</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Recovery Revocation Errors</span></span>
+      </span>
+    </button><button class="tile" data-i="32" data-moment="#tm-orientation" data-origin="NL Wallet" data-search="wallet dashboard, populated nl wallet wallet onboarding issuance **wallet dashboard, populated.**
+
+**practices demonstrated**
+- p-16 (context): put the consent dashboard no more than two clicks from home. — home screen from which the two-click budget is measured.
+
+from nl wallet. invitation &amp; onboarding">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--wal11-wallet-dashboard-populated.png" alt="Wallet dashboard, populated"></span>
+      <span class="b">
+        <span class="t">Wallet dashboard, populated</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Invitation &amp; Onboarding</span><span class="badge">Wallet Onboarding Issuance</span></span>
+      </span>
+    </button><button class="tile" data-i="33" data-moment="#tm-retrospection" data-origin="Aries VCR" data-search="public credential registry entry with verified badge and annotated anatomy aries vcr credential registry and issuers **public credential registry entry with verified badge and annotated anatomy.** a public, searchable registry of who holds which credential, with issuing authority, effective and expiry dates and a 'credential verified' badge. the verifier-side counterpart to the holder-side wallet.
+
+from aries vcr. retrospection &amp; portfolio">
+      <span class="shot"><img loading="lazy" src="images/aries-vcr--cre01-public-credential-registry-entry-with-verified-badge.png" alt="Public credential registry entry with verified badge and annotated anatomy"></span>
+      <span class="b">
+        <span class="t">Public credential registry entry with verified badge and annotated anatomy</span>
+        <span class="src"><b>Aries VCR</b> &middot; <a href="https://github.com/bcgov/aries-vcr" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Retrospection &amp; Portfolio</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Credential Registry And Issuers</span></span>
+      </span>
+    </button><button class="tile" data-i="34" data-moment="#tm-repair" data-origin="NL Wallet" data-search="no connectivity nl wallet recovery revocation errors **no connectivity.** offline behaviour matters disproportionately for proximity presentation, which is designed to work without connectivity.
+
+from nl wallet. incident, recovery &amp; revocation">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--rec16-no-connectivity.png" alt="No connectivity"></span>
+      <span class="b">
+        <span class="t">No connectivity</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Incident, Recovery &amp; Revocation</span><span class="badge">Recovery Revocation Errors</span></span>
+      </span>
+    </button><button class="tile" data-i="35" data-moment="#tm-retrospection" data-origin="NL Wallet" data-search="history entry recording that nothing was shared nl wallet transaction history audit **history entry recording that nothing was shared.** logs the non-event. a refusal is recorded as explicitly as a disclosure, which is what makes the log trustworthy.
+
+**practices demonstrated**
+- p-17 (exemplar): keep a holder-accessible log recording time, what was requested, what was actually presented, and to whom. — logs the non-event. recording a refusal as explicitly as a disclosure is what makes the log trustworthy.
+
+from nl wallet. retrospection &amp; portfolio">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--tra03-history-entry-recording-that-nothing-was-shared.png" alt="History entry recording that nothing was shared"></span>
+      <span class="b">
+        <span class="t">History entry recording that nothing was shared</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Retrospection &amp; Portfolio</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Transaction History Audit</span></span>
+      </span>
+    </button><button class="tile" data-i="36" data-moment="#tm-comprehension" data-origin="C2PA UX Guidance" data-search="l3 tree view, selectable manifests with assertion panel c2pa ux guidance l3 detail and repair **l3 tree view, selectable manifests with assertion panel.**
+
+from c2pa ux guidance. request comprehension">
+      <span class="shot"><img loading="lazy" src="images/c2pa-ux-guidance--fig17-l3-tree-view-selectable-manifests-with-assertion.png" alt="L3 tree view, selectable manifests with assertion panel"></span>
+      <span class="b">
+        <span class="t">L3 tree view, selectable manifests with assertion panel</span>
+        <span class="src"><b>C2PA UX Guidance</b> &middot; <a href="https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Request Comprehension</span><span class="badge">L3 Detail And Repair</span></span>
+      </span>
+    </button><button class="tile" data-i="37" data-moment="#tm-repair" data-origin="BC Wallet" data-search="notification example bc wallet wallet visual language **notification example.**
+
+**practices demonstrated**
+- p-47 (context): treat every prompt as spending a finite attention budget, and be able to state what each one buys. — a notification - each one spends attention budget.
+
+from bc wallet. incident, recovery &amp; revocation">
+      <span class="shot"><img loading="lazy" src="images/bc-wallet--wal20-notification-example.png" alt="Notification example"></span>
+      <span class="b">
+        <span class="t">Notification example</span>
+        <span class="src"><b>BC Wallet</b> &middot; <a href="https://github.com/bcgov/bc-wallet-mobile" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Incident, Recovery &amp; Revocation</span><span class="badge">Wallet Visual Language</span></span>
+      </span>
+    </button><button class="tile" data-i="38" data-moment="#tm-custody" data-origin="NL Wallet" data-search="privacy explainer sheet for card data nl wallet transaction history audit **privacy explainer sheet for card data.**
+
+**practices demonstrated**
+- p-15 (context): on revocation, state plainly what happens to data already shared. — where post-revocation data handling would be explained.
+
+from nl wallet. custody &amp; recovery setup">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--tra06-privacy-explainer-sheet-for-card-data.png" alt="Privacy explainer sheet for card data"></span>
+      <span class="b">
+        <span class="t">Privacy explainer sheet for card data</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Custody &amp; Recovery Setup</span><span class="badge">Transaction History Audit</span></span>
+      </span>
+    </button><button class="tile" data-i="39" data-moment="#tm-retrospection" data-origin="NL Wallet" data-search="transaction receipt: what was shared, with whom, when and why nl wallet transaction history audit **transaction receipt: what was shared, with whom, when and why.** this is the identity-wallet receipt ui that the c2pa worksheet said had no prior art. it exists and it ships. answers whitten &amp; tygar's problem: show what was actually sent, after the fact.
+
+**practices demonstrated**
+- p-17 (exemplar): keep a holder-accessible log recording time, what was requested, what was actually presented, and to whom. — time, counterparty, reason and attributes actually shared - the rule realised in full.
+- p-45 (exemplar): tell the user, unmistakably, whenever they are being monitored or tracked. — the record that makes observation visible after the fact.
+
+from nl wallet. retrospection &amp; portfolio">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--tra02-transaction-receipt-what-was-shared-with-whom-when-a.png" alt="Transaction receipt: what was shared, with whom, when and why"></span>
+      <span class="b">
+        <span class="t">Transaction receipt: what was shared, with whom, when and why</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Retrospection &amp; Portfolio</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Transaction History Audit</span></span>
+      </span>
+    </button><button class="tile" data-i="40" data-moment="#tm-counterparty" data-origin="EUDI ARF" data-search="untrusted relying-party alert with report action eudi arf relying party trust **untrusted relying-party alert with report action.** phishing-resistant verifier pattern: 'do not share sensitive information with the current recipient until their validity is confirmed', with a report action. the negative counterpart to the trusted badge.
+
+**practices demonstrated**
+- p-04 (exemplar): warn the user to share only with relying parties they recognise, at the moment of sharing. — 'do not share sensitive information with the current recipient until their validity is confirmed', with a report action.
+
+from eudi arf. counterparty identification &amp; verification">
+      <span class="shot"><img loading="lazy" src="images/eudi-arf--rel01-untrusted-relying-party-alert-with-report-action.png" alt="Untrusted relying-party alert with report action"></span>
+      <span class="b">
+        <span class="t">Untrusted relying-party alert with report action</span>
+        <span class="src"><b>EUDI ARF</b> &middot; <a href="https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Counterparty Identification &amp; Verification</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Relying Party Trust</span></span>
+      </span>
+    </button><button class="tile" data-i="41" data-moment="#tm-retrospection" data-origin="C2PA UX Guidance" data-search="update manifest without thumbnail c2pa ux guidance l3 detail and repair **update manifest without thumbnail.** closest thing to a receipt ui in any spec (figs 20-21)
+
+from c2pa ux guidance. retrospection &amp; portfolio">
+      <span class="shot"><img loading="lazy" src="images/c2pa-ux-guidance--fig21-update-manifest-without-thumbnail.png" alt="Update manifest without thumbnail"></span>
+      <span class="b">
+        <span class="t">Update manifest without thumbnail</span>
+        <span class="src"><b>C2PA UX Guidance</b> &middot; <a href="https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Retrospection &amp; Portfolio</span><span class="badge">L3 Detail And Repair</span></span>
+      </span>
+    </button><button class="tile" data-i="42" data-moment="#tm-orientation" data-origin="swiyu" data-search="swiss e-id credential card art swiyu wallet visual language **swiss e-id credential card art.** swiyu's visual language derives from the holographic security feature of swiss physical id documents, deliberately borrowing the trust cues of the paper artefact.
+
+from swiyu. invitation &amp; onboarding">
+      <span class="shot"><img loading="lazy" src="images/swiyu--wal09-swiss-e-id-credential-card-art.png" alt="Swiss e-ID credential card art"></span>
+      <span class="b">
+        <span class="t">Swiss e-ID credential card art</span>
+        <span class="src"><b>swiyu</b> &middot; <a href="https://github.com/swiyu-admin-ch/eidch-android-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Invitation &amp; Onboarding</span><span class="badge">Wallet Visual Language</span></span>
+      </span>
+    </button><button class="tile" data-i="43" data-moment="#tm-disclosure" data-origin="NL Wallet" data-search="choosing between alternative credentials that satisfy the same request nl wallet wallet consent disclosure **choosing between alternative credentials that satisfy the same request.** rarely specified anywhere: the user picks which credential satisfies a request, not just which attributes.
+
+**practices demonstrated**
+- p-38 (exemplar): when offering a choice of identity providers or wallets, make every option visually equal in size and weight. — choosing between credentials that satisfy the same request.
+
+from nl wallet. consent &amp; disclosure decision">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--wal15-choosing-between-alternative-credentials-that-satisf.png" alt="Choosing between alternative credentials that satisfy the same request"></span>
+      <span class="b">
+        <span class="t">Choosing between alternative credentials that satisfy the same request</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Consent &amp; Disclosure Decision</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Wallet Consent Disclosure</span></span>
+      </span>
+    </button><button class="tile" data-i="44" data-moment="#tm-issuance" data-origin="NL Wallet" data-search="verify the issuing organisation before accepting a credential nl wallet wallet onboarding issuance **verify the issuing organisation before accepting a credential.**
+
+from nl wallet. enrollment / issuance">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--wal12-verify-the-issuing-organisation-before-accepting-a-c.png" alt="Verify the issuing organisation before accepting a credential"></span>
+      <span class="b">
+        <span class="t">Verify the issuing organisation before accepting a credential</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Enrollment / Issuance</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Wallet Onboarding Issuance</span></span>
+      </span>
+    </button><button class="tile" data-i="45" data-moment="#tm-comprehension" data-origin="NL Wallet" data-search="check the pid data being issued during wallet personalisation nl wallet wallet onboarding issuance **check the pid data being issued during wallet personalisation.** the moment the user first sees what the state asserts about them, before accepting it into the wallet.
+
+from nl wallet. request comprehension">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--wal16-check-the-pid-data-being-issued-during-wallet-person.png" alt="Check the PID data being issued during wallet personalisation"></span>
+      <span class="b">
+        <span class="t">Check the PID data being issued during wallet personalisation</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Request Comprehension</span><span class="badge">Wallet Onboarding Issuance</span></span>
+      </span>
+    </button><button class="tile" data-i="46" data-moment="#tm-comprehension" data-origin="C2PA UX Guidance" data-search="l3 thumbnail labels c2pa ux guidance ai content disclosure **l3 thumbnail labels.** part of the l3 labeling series (figs 27-30)
+
+from c2pa ux guidance. request comprehension">
+      <span class="shot"><img loading="lazy" src="images/c2pa-ux-guidance--fig27-l3-thumbnail-labels.png" alt="L3 thumbnail labels"></span>
+      <span class="b">
+        <span class="t">L3 thumbnail labels</span>
+        <span class="src"><b>C2PA UX Guidance</b> &middot; <a href="https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Request Comprehension</span><span class="badge">Ai Content Disclosure</span></span>
+      </span>
+    </button><button class="tile" data-i="47" data-moment="#tm-comprehension" data-origin="C2PA UX Guidance" data-search="l3 manifest panel with description c2pa ux guidance ai content disclosure **l3 manifest panel with description.** part of the l3 labeling series (figs 27-30)
+
+from c2pa ux guidance. request comprehension">
+      <span class="shot"><img loading="lazy" src="images/c2pa-ux-guidance--fig28-l3-manifest-panel-with-description.png" alt="L3 manifest panel with description"></span>
+      <span class="b">
+        <span class="t">L3 manifest panel with description</span>
+        <span class="src"><b>C2PA UX Guidance</b> &middot; <a href="https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Request Comprehension</span><span class="badge">Ai Content Disclosure</span></span>
+      </span>
+    </button><button class="tile" data-i="48" data-moment="#tm-comprehension" data-origin="C2PA UX Guidance" data-search="l3 labeled tree view c2pa ux guidance ai content disclosure **l3 labeled tree view.** part of the l3 labeling series (figs 27-30)
+
+from c2pa ux guidance. request comprehension">
+      <span class="shot"><img loading="lazy" src="images/c2pa-ux-guidance--fig30-l3-labeled-tree-view.png" alt="L3 labeled tree view"></span>
+      <span class="b">
+        <span class="t">L3 labeled tree view</span>
+        <span class="src"><b>C2PA UX Guidance</b> &middot; <a href="https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Request Comprehension</span><span class="badge">Ai Content Disclosure</span></span>
+      </span>
+    </button><button class="tile" data-i="49" data-moment="#tm-orientation" data-origin="Bifold" data-search="left-to-right and right-to-left rendering side by side bifold accessibility and inclusion **left-to-right and right-to-left rendering side by side.** english and arabic rtl of the same trust prompt. bidirectional support is an inclusion requirement that trust ui routinely fails.
+
+**practices demonstrated**
+- p-43 (exemplar): usability-test with a demographically diverse panel, as a condition of accreditation. — ltr and rtl of the same trust prompt - inclusion made visible.
+
+from bifold. invitation &amp; onboarding">
+      <span class="shot"><img loading="lazy" src="images/bifold--acc04-left-to-right-and-right-to-left-rendering-side-by-si.png" alt="Left-to-right and right-to-left rendering side by side"></span>
+      <span class="b">
+        <span class="t">Left-to-right and right-to-left rendering side by side</span>
+        <span class="src"><b>Bifold</b> &middot; <a href="https://github.com/openwallet-foundation/bifold-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Invitation &amp; Onboarding</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Accessibility And Inclusion</span></span>
+      </span>
+    </button><button class="tile" data-i="50" data-moment="#tm-disclosure" data-origin="NL Wallet" data-search="pin confirmation as the act of consent nl wallet mobile authentication **pin confirmation as the act of consent.**
+
+**practices demonstrated**
+- p-11 (exemplar): ask for consent once, at the party that has the context to explain it. do not re-ask at the credential holder. — pin entry is the consent act; no separate re-confirmation screen follows.
+
+from nl wallet. consent &amp; disclosure decision">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--mob10-pin-confirmation-as-the-act-of-consent.png" alt="PIN confirmation as the act of consent"></span>
+      <span class="b">
+        <span class="t">PIN confirmation as the act of consent</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Consent &amp; Disclosure Decision</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Mobile Authentication</span></span>
+      </span>
+    </button><button class="tile" data-i="51" data-moment="#tm-comprehension" data-origin="C2PA" data-search="multiple origins plus manifests c2pa l2 provenance summaries **provenance summary, multiple origins and manifests.**
+
+from the c2pa user experience guidance for implementers. request comprehension">
+      <span class="shot"><img loading="lazy" src="images/l2-provenance-summaries--c2pa-fig13.png" alt="Multiple origins plus manifests"></span>
+      <span class="b">
+        <span class="t">Multiple origins plus manifests</span>
+        <span class="src"><b>C2PA</b> &middot; <a href="https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Request Comprehension</span><span class="badge">L2 provenance summaries</span></span>
+      </span>
+    </button><button class="tile" data-i="52" data-moment="#tm-comprehension" data-origin="C2PA" data-search="customized combinatory summaries by vertical c2pa l2 provenance summaries **customized summary combinations.**
+
+from the c2pa user experience guidance for implementers. request comprehension">
+      <span class="shot"><img loading="lazy" src="images/l2-provenance-summaries--c2pa-fig14.png" alt="Customized combinatory summaries by vertical"></span>
+      <span class="b">
+        <span class="t">Customized combinatory summaries by vertical</span>
+        <span class="src"><b>C2PA</b> &middot; <a href="https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Request Comprehension</span><span class="badge">L2 provenance summaries</span></span>
+      </span>
+    </button><button class="tile" data-i="53" data-moment="#tm-repair" data-origin="NL Wallet" data-search="pin recovery blocked because the identity does not match nl wallet recovery revocation errors **pin recovery blocked because the identity does not match.**
+
+from nl wallet. incident, recovery &amp; revocation">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--rec14-pin-recovery-blocked-because-the-identity-does-not-m.png" alt="PIN recovery blocked because the identity does not match"></span>
+      <span class="b">
+        <span class="t">PIN recovery blocked because the identity does not match</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Incident, Recovery &amp; Revocation</span><span class="badge">Recovery Revocation Errors</span></span>
+      </span>
+    </button><button class="tile" data-i="54" data-moment="#tm-issuance" data-origin="NL Wallet" data-search="review new and updated credentials together nl wallet wallet onboarding issuance **review new and updated credentials together.** shows the delta between what you had and what you are being given, which is the bravo-lillo prescription: make the change the thing you interact with.
+
+**practices demonstrated**
+- p-26 (exemplar): when re-confirming, state explicitly that nothing else about the arrangement is changing. — shows the delta between what you held and what you are being given - the change is the thing you interact with.
+- p-37 (exemplar): when you change a privacy notice, keep prior versions accessible and highlight what changed. — old and new shown together so the change is visible.
+
+from nl wallet. enrollment / issuance">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--wal14-review-new-and-updated-credentials-together.png" alt="Review new and updated credentials together"></span>
+      <span class="b">
+        <span class="t">Review new and updated credentials together</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Enrollment / Issuance</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Wallet Onboarding Issuance</span></span>
+      </span>
+    </button><button class="tile" data-i="55" data-moment="#tm-comprehension" data-origin="EUDI ARF" data-search="attribute label conventions eudi arf wallet consent disclosure **attribute label conventions.** relevant to the nccoe finding that mdl attribute labels ('issuing authority', 'administrative number') are unintelligible to holders.
+
+**practices demonstrated**
+- p-05 (context): group requested data into named clusters at the top level and let the user drill down to individual fields. do not present a flat list of raw attribute names. — label conventions - the layer where cluster naming would live.
+- p-19 (exemplar): use the vocabulary users have actually learned, not your internal terminology. — attribute label conventions - the vocabulary layer.
+
+from eudi arf. request comprehension">
+      <span class="shot"><img loading="lazy" src="images/eudi-arf--wal03-attribute-label-conventions.png" alt="Attribute label conventions"></span>
+      <span class="b">
+        <span class="t">Attribute label conventions</span>
+        <span class="src"><b>EUDI ARF</b> &middot; <a href="https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Request Comprehension</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Wallet Consent Disclosure</span></span>
+      </span>
+    </button><button class="tile" data-i="56" data-moment="#tm-repair" data-origin="NL Wallet" data-search="pin recovery, entry point nl wallet recovery revocation errors **pin recovery, entry point.** korir et al. found ~50% of users assumed a third party would recover access for them. this is where that assumption is either met or corrected.
+
+**practices demonstrated**
+- p-44 (exemplar): always offer more than one route to prove the same thing. — a second route back in when the first fails.
+
+from nl wallet. incident, recovery &amp; revocation">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--rec13-pin-recovery-entry-point.png" alt="PIN recovery, entry point"></span>
+      <span class="b">
+        <span class="t">PIN recovery, entry point</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Incident, Recovery &amp; Revocation</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Recovery Revocation Errors</span></span>
+      </span>
+    </button><button class="tile" data-i="57" data-moment="#tm-repair" data-origin="CAI Verify" data-search="unknown-source warning chip cai verify provenance display implementations **unknown-source warning chip.** 'this content credential was issued by an unknown source.' the untrusted-signer state rendered as a neutral chip rather than a red alarm, consistent with c2pa finding a.
+
+**practices demonstrated**
+- p-34 (exemplar): anti-pattern - left in the dark: do not hide controls or leave the user unsure how data is processed. — 'issued by an unknown source' rendered as a neutral chip - no silent default.
+
+from cai verify. incident, recovery &amp; revocation">
+      <span class="shot"><img loading="lazy" src="images/cai-verify--pro03-unknown-source-warning-chip.png" alt="Unknown-source warning chip"></span>
+      <span class="b">
+        <span class="t">Unknown-source warning chip</span>
+        <span class="src"><b>CAI Verify</b> &middot; <a href="https://github.com/contentauth/opensource.contentauth.org" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Incident, Recovery &amp; Revocation</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Provenance Display Implementations</span></span>
+      </span>
+    </button><button class="tile" data-i="58" data-moment="#tm-comprehension" data-origin="CAI Verify" data-search="content summary card: issuer, date, process and ai tool used cai verify provenance display implementations **content summary card: issuer, date, process and ai tool used.** the l2 summary from the c2pa spec, as actually built.
+
+from cai verify. request comprehension">
+      <span class="shot"><img loading="lazy" src="images/cai-verify--pro02-content-summary-card-issuer-date-process-and-ai-tool.png" alt="Content summary card: issuer, date, process and AI tool used"></span>
+      <span class="b">
+        <span class="t">Content summary card: issuer, date, process and AI tool used</span>
+        <span class="src"><b>CAI Verify</b> &middot; <a href="https://github.com/contentauth/opensource.contentauth.org" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Request Comprehension</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Provenance Display Implementations</span></span>
+      </span>
+    </button><button class="tile" data-i="59" data-moment="#tm-repair" data-origin="EUDI ARF" data-search="incorrect credentials entry eudi arf mobile authentication **incorrect credentials entry.**
+
+**practices demonstrated**
+- p-41 (exemplar): do not reveal which credential was wrong. — failed credential entry without naming which field was wrong.
+
+from eudi arf. incident, recovery &amp; revocation">
+      <span class="shot"><img loading="lazy" src="images/eudi-arf--mob01-incorrect-credentials-entry.png" alt="Incorrect credentials entry"></span>
+      <span class="b">
+        <span class="t">Incorrect credentials entry</span>
+        <span class="src"><b>EUDI ARF</b> &middot; <a href="https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Incident, Recovery &amp; Revocation</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Mobile Authentication</span></span>
+      </span>
+    </button><button class="tile" data-i="60" data-moment="#tm-orientation" data-origin="Login.gov" data-search="logo usage guidelines login.gov prescriptive practices **logo usage guidelines.**
+
+**practices demonstrated**
+- p-40 (context): never use an icon alone where a text label carries the meaning. — co-branding spec including a labelled 'show password' control.
+- p-42 (exemplar): allow password visibility toggling and permit paste. — sign-in page showing an explicit 'show password' toggle.
+
+from login.gov. invitation &amp; onboarding">
+      <span class="shot"><img loading="lazy" src="images/logingov--pra06-logo-usage-guidelines.png" alt="Logo usage guidelines"></span>
+      <span class="b">
+        <span class="t">Logo usage guidelines</span>
+        <span class="src"><b>Login.gov</b> &middot; <a href="https://github.com/18F/identity-dev-docs" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Invitation &amp; Onboarding</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Prescriptive Practices</span></span>
+      </span>
+    </button><button class="tile" data-i="61" data-moment="#tm-execution" data-origin="NL Wallet" data-search="presenting a qr code for proximity engagement nl wallet proximity cross device **presenting a qr code for proximity engagement.**
+
+**practices demonstrated**
+- p-23 (exemplar): cross-device handoff must not require the user to retype anything. — scan-only engagement with no manual code entry.
+
+from nl wallet. execution &amp; confirmation">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--pro06-presenting-a-qr-code-for-proximity-engagement.png" alt="Presenting a QR code for proximity engagement"></span>
+      <span class="b">
+        <span class="t">Presenting a QR code for proximity engagement</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Execution &amp; Confirmation</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Proximity Cross Device</span></span>
+      </span>
+    </button><button class="tile" data-i="62" data-moment="#tm-repair" data-origin="EUDI ARF" data-search="repeated failed authentication with lock-out timer eudi arf mobile authentication **repeated failed authentication with lock-out timer.** rate-limiting surfaced to the user as a countdown rather than a dead end.
+
+from eudi arf. incident, recovery &amp; revocation">
+      <span class="shot"><img loading="lazy" src="images/eudi-arf--mob02-repeated-failed-authentication-with-lock-out-timer.png" alt="Repeated failed authentication with lock-out timer"></span>
+      <span class="b">
+        <span class="t">Repeated failed authentication with lock-out timer</span>
+        <span class="src"><b>EUDI ARF</b> &middot; <a href="https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Incident, Recovery &amp; Revocation</span><span class="badge">Mobile Authentication</span></span>
+      </span>
+    </button><button class="tile" data-i="63" data-moment="#tm-repair" data-origin="EUDI ARF" data-search="error message construction eudi arf recovery revocation errors **error message construction.**
+
+**practices demonstrated**
+- p-41 (context): do not reveal which credential was wrong. — error message construction guidance.
+
+from eudi arf. incident, recovery &amp; revocation">
+      <span class="shot"><img loading="lazy" src="images/eudi-arf--rec05-error-message-construction.png" alt="Error message construction"></span>
+      <span class="b">
+        <span class="t">Error message construction</span>
+        <span class="src"><b>EUDI ARF</b> &middot; <a href="https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Incident, Recovery &amp; Revocation</span><span class="badge">Recovery Revocation Errors</span></span>
+      </span>
+    </button><button class="tile" data-i="64" data-moment="#tm-execution" data-origin="IT Wallet" data-search="remote presentation, cross device it wallet proximity cross device **remote presentation, cross device.** cross-device hand-off is precisely where the nist nccoe study found consent confusion and qr timeout failures.
+
+from it wallet. execution &amp; confirmation">
+      <span class="shot"><img loading="lazy" src="images/it-wallet--pro04-remote-presentation-cross-device.png" alt="Remote presentation, cross device"></span>
+      <span class="b">
+        <span class="t">Remote presentation, cross device</span>
+        <span class="src"><b>IT Wallet</b> &middot; <a href="https://github.com/italia/eid-wallet-it-docs" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Execution &amp; Confirmation</span><span class="badge">Proximity Cross Device</span></span>
+      </span>
+    </button><button class="tile" data-i="65" data-moment="#tm-custody" data-origin="IT Wallet" data-search="wallet deactivation it wallet recovery revocation errors **wallet deactivation.**
+
+**practices demonstrated**
+- p-13 (exemplar): make withdrawing consent exactly as easy as giving it. — whole-wallet deactivation available to the user.
+
+from it wallet. custody &amp; recovery setup">
+      <span class="shot"><img loading="lazy" src="images/it-wallet--rec08-wallet-deactivation.png" alt="Wallet deactivation"></span>
+      <span class="b">
+        <span class="t">Wallet deactivation</span>
+        <span class="src"><b>IT Wallet</b> &middot; <a href="https://github.com/italia/eid-wallet-it-docs" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Custody &amp; Recovery Setup</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Recovery Revocation Errors</span></span>
+      </span>
+    </button><button class="tile" data-i="66" data-moment="#tm-repair" data-origin="NL Wallet" data-search="dashboard with credential expiring in 10 days nl wallet recovery revocation errors **dashboard with credential expiring in 10 days.** one of a graded series (10 days / 10 hours / 10 minutes): urgency escalates with time remaining.
+
+**practices demonstrated**
+- p-18 (exemplar): use a small fixed set of status values on the dashboard, not free-form or graded states. — a small fixed status vocabulary rather than a graded meter.
+- p-25 (exemplar): re-confirm long-lived access periodically, and stop accessing data if the user does not respond. — graded urgency as expiry approaches.
+
+from nl wallet. incident, recovery &amp; revocation">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--rec12-dashboard-with-credential-expiring-in-10-days.png" alt="Dashboard with credential expiring in 10 days"></span>
+      <span class="b">
+        <span class="t">Dashboard with credential expiring in 10 days</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Incident, Recovery &amp; Revocation</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Recovery Revocation Errors</span></span>
+      </span>
+    </button><button class="tile" data-i="67" data-moment="#tm-orientation" data-origin="C2PA UX Guidance" data-search="compare state, two manifest thumbnails side by side c2pa ux guidance l3 detail and repair **compare state, two manifest thumbnails side by side.** nearest existing analogue to the simulation pattern
+
+**practices demonstrated**
+- p-37 (exemplar): when you change a privacy notice, keep prior versions accessible and highlight what changed. — side-by-side comparison of two states.
+
+from c2pa ux guidance. invitation &amp; onboarding">
+      <span class="shot"><img loading="lazy" src="images/c2pa-ux-guidance--fig18-compare-state-two-manifest-thumbnails-side-by-si.png" alt="Compare state, two manifest thumbnails side by side"></span>
+      <span class="b">
+        <span class="t">Compare state, two manifest thumbnails side by side</span>
+        <span class="src"><b>C2PA UX Guidance</b> &middot; <a href="https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Invitation &amp; Onboarding</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">L3 Detail And Repair</span></span>
+      </span>
+    </button><button class="tile" data-i="68" data-moment="#tm-counterparty" data-origin="NL Wallet" data-search="verify the relying party's url before disclosing nl wallet relying party trust **verify the relying party's url before disclosing.** directly targets the failure mode thompson et al. 2019 documented: users could not read the address bar. here the url check is a dedicated step, not chrome.
+
+**practices demonstrated**
+- p-02 (exemplar): display the relying party's trading or brand name - the name the user would recognise - not its legal entity name or client id. — a dedicated url-check step.
+
+from nl wallet. counterparty identification &amp; verification">
+      <span class="shot"><img loading="lazy" src="images/nl-wallet--rel05-verify-the-relying-party-s-url-before-disclosing.png" alt="Verify the relying party's URL before disclosing"></span>
+      <span class="b">
+        <span class="t">Verify the relying party's URL before disclosing</span>
+        <span class="src"><b>NL Wallet</b> &middot; <a href="https://github.com/MinBZK/nl-wallet" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Counterparty Identification &amp; Verification</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Relying Party Trust</span></span>
+      </span>
+    </button><button class="tile" data-i="69" data-moment="#tm-comprehension" data-origin="CAI Verify" data-search="full three-panel content credentials inspector cai verify provenance display implementations **full three-panel content credentials inspector.** the wave-1 c2pa spec figures realised as shipped product. left: manifest list plus 'search for possible matches'. centre: asset with the cr pin. right: ai-generated disclosure, app or device used, recorded-by and actions.
+
+from cai verify. request comprehension">
+      <span class="shot"><img loading="lazy" src="images/cai-verify--pro01-full-three-panel-content-credentials-inspector.png" alt="Full three-panel Content Credentials inspector"></span>
+      <span class="b">
+        <span class="t">Full three-panel Content Credentials inspector</span>
+        <span class="src"><b>CAI Verify</b> &middot; <a href="https://github.com/contentauth/opensource.contentauth.org" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Request Comprehension</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Provenance Display Implementations</span></span>
+      </span>
+    </button><button class="tile" data-i="70" data-moment="#tm-orientation" data-origin="EUDI ARF" data-search="flexible input handling eudi arf mobile authentication **flexible input handling.**
+
+**practices demonstrated**
+- p-42 (exemplar): allow password visibility toggling and permit paste. — flexible input handling.
+
+from eudi arf. invitation &amp; onboarding">
+      <span class="shot"><img loading="lazy" src="images/eudi-arf--mob05-flexible-input-handling.png" alt="Flexible input handling"></span>
+      <span class="b">
+        <span class="t">Flexible input handling</span>
+        <span class="src"><b>EUDI ARF</b> &middot; <a href="https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Invitation &amp; Onboarding</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Mobile Authentication</span></span>
+      </span>
+    </button><button class="tile" data-i="71" data-moment="#tm-orientation" data-origin="IT Wallet" data-search="authentication, same device it wallet mobile authentication **authentication, same device.**
+
+**practices demonstrated**
+- p-21 (exemplar): authentication via redirect must take no more steps than opening your app directly. — same-device authentication path to audit for step parity.
+
+from it wallet. invitation &amp; onboarding">
+      <span class="shot"><img loading="lazy" src="images/it-wallet--mob08-authentication-same-device.png" alt="Authentication, same device"></span>
+      <span class="b">
+        <span class="t">Authentication, same device</span>
+        <span class="src"><b>IT Wallet</b> &middot; <a href="https://github.com/italia/eid-wallet-it-docs" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Invitation &amp; Onboarding</span><span class="vbadge" style="background:#2f7d16">Exemplar</span><span class="badge">Mobile Authentication</span></span>
+      </span>
+    </button><button class="tile" data-i="72" data-moment="#tm-execution" data-origin="IT Wallet" data-search="remote presentation, same device it wallet proximity cross device **remote presentation, same device.**
+
+**practices demonstrated**
+- p-22 (context): tell the user before the hand-off that they are about to be sent elsewhere, and on return that the session has closed. — full same-device journey including return.
+
+from it wallet. execution &amp; confirmation">
+      <span class="shot"><img loading="lazy" src="images/it-wallet--pro03-remote-presentation-same-device.png" alt="Remote presentation, same device"></span>
+      <span class="b">
+        <span class="t">Remote presentation, same device</span>
+        <span class="src"><b>IT Wallet</b> &middot; <a href="https://github.com/italia/eid-wallet-it-docs" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Execution &amp; Confirmation</span><span class="badge">Proximity Cross Device</span></span>
+      </span>
+    </button><button class="tile" data-i="73" data-moment="#tm-orientation" data-origin="NIST NCCoE mDL" data-search="regenerated qr code after timeout nist nccoe mdl mdl usability evidence **regenerated qr code after timeout.** the other half of the pair. compare the two: visually different, semantically the same request.
+
+**practices demonstrated**
+- p-23 (antipattern): cross-device handoff must not require the user to retype anything. — after ~40s it regenerates as a visually different code meaning the same thing. field-evidenced failure - use as a paired card.
+
+from nist nccoe mdl. invitation &amp; onboarding">
+      <span class="shot"><img loading="lazy" src="images/nccoe-mdl--mdl07-regenerated-qr-code-after-timeout.png" alt="Regenerated QR code after timeout"></span>
+      <span class="b">
+        <span class="t">Regenerated QR code after timeout</span>
+        <span class="src"><b>NIST NCCoE mDL</b> &middot; <a href="https://github.com/usnistgov/nccoe-mdl-project-static-website" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">source &nearr;</a></span>
+        <span class="chips"><span class="badge">Invitation &amp; Onboarding</span><span class="vbadge" style="background:#b4532e">Anti-pattern</span><span class="badge">Mdl Usability Evidence</span></span>
+      </span>
+    </button></div>
+  <footer class="doc">
+    <p>Human Trust Experience explorer, snapshot 4 August 2026 at 17:51. Screens are reproduced under each
+      item's stated licence with attribution. The living version, with live filtering, ratings and contribution,
+      is at <a href="https://platform.validant.ai/trust-experience" target="_blank" rel="noopener noreferrer">https://platform.validant.ai/trust-experience</a>.</p>
+  </footer>
+</div>
+<div class="lb" id="lb"><div class="box" id="lbc"></div></div>
+
+<div class="ovl" id="liveModal" role="dialog" aria-modal="true" aria-labelledby="lmTitle">
+  <div class="modal">
+    <button class="x" type="button" aria-label="Close" onclick="__closeLive()">&times;</button>
+    <h3 id="lmTitle">Available on the live platform</h3>
+    <p class="muted">This is a static snapshot, so interactive features (browsing and filtering the
+      example-screen gallery, community ratings, and contributing patterns) are frozen here.</p>
+    <p class="muted">Open the live Human Trust Experience page to explore and change the system.</p>
+    <a class="cta" id="lmLink" href="#" target="_blank" rel="noopener noreferrer">Open the live page &rarr;</a>
+  </div>
+</div>
+<script>window.__TUX_DATA = [{"title":"The depth-versus-breadth spectrum for summary design","origin":"C2PA UX Guidance","origin_url":"https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf","use_case":"L2 Provenance Summaries","moment":"Request Comprehension","img":"images/c2pa-ux-guidance--fig07-the-depth-versus-breadth-spectrum-for-summary-de.png","writeup":"\u003cstrong>The depth-versus-breadth spectrum for summary design.\u003c/strong> Conceptually the most interesting figure in the set\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-29 (context): ANTI-PATTERN - Overloading: do not bury the protective choice under an avalanche of options. — The explicit depth-vs-breadth tradeoff - the design decision that prevents overloading.\u003cbr>\u003cbr>From C2PA UX Guidance.","license":"CC-BY-4.0","attribution":"C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"Wallet welcome screen carrying the EUDI Trust Mark with trusted-list and information links","origin":"EUDI TS1","origin_url":"https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications","use_case":"Relying Party Trust","moment":"Invitation & Onboarding","img":"images/eudi-ts1--rel02-wallet-welcome-screen-carrying-the-eudi-trust-mark-w.png","writeup":"\u003cstrong>Wallet welcome screen carrying the EUDI Trust Mark with trusted-list and information links.\u003c/strong> The only official trust-mark-in-context mockup. Links out to the Wallet Provider Trusted List and an information page, i.e. the mark is a navigation affordance, not just a badge. Concept image per the spec.\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-03 (exemplar): Give the user a way to tell your genuine authentication screen from a spoof, such as a personalised element only you could know. — Trust mark plus links to the provider trusted list.\u003cbr>\u003cbr>From EUDI TS1.","license":"CC-BY-4.0","attribution":"Specification of EUDI Wallet Trust Mark (TS1), (c) European Union, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"Stop-and-confirm sheet when abandoning disclosure","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Wallet Consent Disclosure","moment":"Consent & Disclosure Decision","img":"images/nl-wallet--wal13-stop-and-confirm-sheet-when-abandoning-disclosure.png","writeup":"\u003cstrong>Stop-and-confirm sheet when abandoning disclosure.\u003c/strong> A genuine, non-punitive refusal path. Korir et al. found users felt limited ability to refuse; this is the counter-design.\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-12 (exemplar): Give continuing and declining equal visual prominence and equal path length. — A genuine, non-punitive refusal path given real prominence.\u003cbr>- P-14 (exemplar): Cap the exit path at one friction screen, then confirm. — Exactly one friction screen on the exit path.\u003cbr>- P-32 (exemplar): ANTI-PATTERN - Obstructing: do not make the protective action hard or impossible to complete. — The opposite of a dead end - abandonment is a supported, dignified path.\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"Sharing channel chooser: QR code versus NFC proximity","origin":"EUDI ARF","origin_url":"https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework","use_case":"Proximity Cross Device","moment":"Invitation & Onboarding","img":"images/eudi-arf--pro01-sharing-channel-chooser-qr-code-versus-nfc-proximity.png","writeup":"\u003cstrong>Sharing channel chooser: QR code versus NFC proximity.\u003c/strong>\u003cbr>\u003cbr>From EUDI ARF.","license":"CC-BY-4.0","attribution":"EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"Relying-party attribute request with mandatory versus optional split and trusted-RP explainer","origin":"EUDI ARF","origin_url":"https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework","use_case":"Wallet Consent Disclosure","moment":"Consent & Disclosure Decision","img":"images/eudi-arf--wal01-relying-party-attribute-request-with-mandatory-versu.png","writeup":"\u003cstrong>Relying-party attribute request with mandatory versus optional split and trusted-RP explainer.\u003c/strong> The single most important figure in this wave. Optional fields are collapsed AND unchecked by default, mandatory fields are non-deselectable, and the verified badge opens a definition of what 'trusted' means. Direct analogue of C2PA Fig 6 but for identity.\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-01 (exemplar): Name the relying party and list exactly what will be shared BEFORE the user authorises, every time. — Relying party named at the top with a verified badge, attributes listed beneath - the rule's exact ordering.\u003cbr>- P-08 (exemplar): Never bundle unrelated permissions into the transaction the user came to complete. — Mandatory and optional are visibly separated, so nothing unrelated rides along with the required set.\u003cbr>- P-09 (exemplar): Default every optional data setting to the most protective value. If you deviate, you must be able to justify it. — Optional fields collapsed AND unchecked by default - the canonical illustration of high-privacy defaults.\u003cbr>\u003cbr>From EUDI ARF.","license":"CC-BY-4.0","attribution":"EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"Confirmation dialogs before consequential actions","origin":"EUDI ARF","origin_url":"https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework","use_case":"Wallet Consent Disclosure","moment":"Request Comprehension","img":"images/eudi-arf--wal05-confirmation-dialogs-before-consequential-actions.png","writeup":"\u003cstrong>Confirmation dialogs before consequential actions.\u003c/strong> Compare GOV.UK 'interruption pages' and Bravo-Lillo's inhibitive attractors: friction placed at the decision point.\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-11 (context): Ask for consent once, at the party that has the context to explain it. Do not re-ask at the credential holder. — Confirmation dialogs - legitimate here, but the rule constrains where a SECOND one may appear.\u003cbr>- P-24 (exemplar): Tell the user where the point of no return is, before they cross it. — Confirmation immediately before the irreversible step.\u003cbr>\u003cbr>From EUDI ARF.","license":"CC-BY-4.0","attribution":"EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"First-run introduction","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Wallet Onboarding Issuance","moment":"Invitation & Onboarding","img":"images/nl-wallet--wal15-first-run-introduction.png","writeup":"\u003cstrong>First-run introduction.\u003c/strong> Sartor et al. found SSI wallets fail to make their novelty and benefits apparent; onboarding is where that is won or lost.\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-48 (context): Cut screens that do not carry a decision, and rewrite the rest in plain language - then measure completion. — Onboarding - where screens that carry no decision accumulate.\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"Icon plus text pairing","origin":"Bifold","origin_url":"https://github.com/openwallet-foundation/bifold-wallet","use_case":"Accessibility And Inclusion","moment":"Request Comprehension","img":"images/bifold--acc10-icon-plus-text-pairing.png","writeup":"\u003cstrong>Icon plus text pairing.\u003c/strong> Porter Felt et al. found Chrome's padlock icon alone was correctly read by only 40.1% of users, and the fix was adding words. Icon-plus-text is the accessible default and the comprehension default at once.\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-40 (exemplar): Never use an icon alone where a text label carries the meaning. — Icon plus text as the default pairing.\u003cbr>\u003cbr>From Bifold.","license":"Apache-2.0","attribution":"Bifold Wallet design guidelines, OpenWallet Foundation, Apache-2.0 (https://www.apache.org/licenses/LICENSE-2.0)"},{"title":"Relying-party login with EUDI wallet, mobile","origin":"EUDI ARF","origin_url":"https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework","use_case":"Wallet Onboarding Issuance","moment":"Enrollment / Issuance","img":"images/eudi-arf--wal01-relying-party-login-with-eudi-wallet-mobile.png","writeup":"\u003cstrong>Relying-party login with EUDI wallet, mobile.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-21 (exemplar): Authentication via redirect must take no more steps than opening your app directly. — The redirect entry point.\u003cbr>\u003cbr>From EUDI ARF.","license":"CC-BY-4.0","attribution":"EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"L2 interaction patterns for disclosure, accordion behavior","origin":"C2PA UX Guidance","origin_url":"https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf","use_case":"Ai Content Disclosure","moment":"Invitation & Onboarding","img":"images/c2pa-ux-guidance--fig26-l2-interaction-patterns-for-disclosure-accordion.png","writeup":"\u003cstrong>L2 interaction patterns for disclosure, accordion behavior.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-36 (exemplar): Deliver short contextual explanations at the decision point, in addition to - not instead of - the full policy. — Accordion disclosure - detail on request, not by default.\u003cbr>\u003cbr>From C2PA UX Guidance.","license":"CC-BY-4.0","attribution":"C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"The journey from L2 into L3","origin":"C2PA UX Guidance","origin_url":"https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf","use_case":"L3 Detail And Repair","moment":"Invitation & Onboarding","img":"images/c2pa-ux-guidance--fig22-the-journey-from-l2-into-l3.png","writeup":"\u003cstrong>The journey from L2 into L3.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-36 (exemplar): Deliver short contextual explanations at the decision point, in addition to - not instead of - the full policy. — The drill-down path from summary to full detail.\u003cbr>\u003cbr>From C2PA UX Guidance.","license":"CC-BY-4.0","attribution":"C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"Full progressive disclosure UI carrying AI labels","origin":"C2PA","origin_url":"https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf","use_case":"AI content disclosure","moment":"Request Comprehension","img":"images/ai-content-disclosure--c2pa-fig23.png","writeup":"\u003cstrong>Progressive disclosure UI with labeling.\u003c/strong>\u003cbr>\u003cbr>From the C2PA User Experience Guidance for Implementers.","license":"CC-BY-4.0","attribution":"C2PA User Experience Guidance for Implementers, CC BY 4.0"},{"title":"Initial browser QR code","origin":"NIST NCCoE mDL","origin_url":"https://github.com/usnistgov/nccoe-mdl-project-static-website","use_case":"Mdl Usability Evidence","moment":"Invitation & Onboarding","img":"images/nccoe-mdl--mdl06-initial-browser-qr-code.png","writeup":"\u003cstrong>Initial browser QR code.\u003c/strong> Half of the study's dominant failure mode: after roughly 40 seconds the QR expired and regenerated as a DIFFERENT code, so users could not tell whether to repeat the step or switch credential.\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-23 (antipattern): Cross-device handoff must not require the user to retype anything. — First QR shown to the user.\u003cbr>\u003cbr>From NIST NCCoE mDL.","license":"US-Gov-PD","attribution":"NIST National Cybersecurity Center of Excellence, mDL project"},{"title":"The four disclosure levels, L1 through L4, as a single diagram","origin":"C2PA UX Guidance","origin_url":"https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf","use_case":"Disclosure Model","moment":"Invitation & Onboarding","img":"images/c2pa-ux-guidance--fig01-the-four-disclosure-levels-l1-through-l4-as-a-si.png","writeup":"\u003cstrong>The four disclosure levels, L1 through L4, as a single diagram.\u003c/strong> Anchor image for the whole gallery\u003cbr>\u003cbr>From C2PA UX Guidance.","license":"CC-BY-4.0","attribution":"C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"Manifest storage settings, local versus remote, with the privacy tradeoff surfaced","origin":"C2PA UX Guidance","origin_url":"https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf","use_case":"Creator Control","moment":"Custody & Recovery Setup","img":"images/c2pa-ux-guidance--fig31-manifest-storage-settings-local-versus-remote-wi.png","writeup":"\u003cstrong>Manifest storage settings, local versus remote, with the privacy tradeoff surfaced.\u003c/strong> Rare example of a storage-location choice rendered as a user decision\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-09 (exemplar): Default every optional data setting to the most protective value. If you deviate, you must be able to justify it. — A storage-location default surfaced as an explicit user decision with the privacy tradeoff stated.\u003cbr>\u003cbr>From C2PA UX Guidance.","license":"CC-BY-4.0","attribution":"C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"Proximity connection failed","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Proximity Cross Device","moment":"Incident, Recovery & Revocation","img":"images/nl-wallet--pro08-proximity-connection-failed.png","writeup":"\u003cstrong>Proximity connection failed.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-23 (context): Cross-device handoff must not require the user to retype anything. — The failure state users land in.\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"Persistent indicator with background","origin":"C2PA","origin_url":"https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf","use_case":"Time-based media","moment":"Invitation & Onboarding","img":"images/time-based-media--c2pa-fig33.png","writeup":"\u003cstrong>L1 indicator should be visible throughout the video, therefore, a background is recommended..\u003c/strong>\u003cbr>\u003cbr>From the C2PA User Experience Guidance for Implementers.","license":"CC-BY-4.0","attribution":"C2PA User Experience Guidance for Implementers, CC BY 4.0"},{"title":"Credential/document presentation layout","origin":"EUDI ARF","origin_url":"https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework","use_case":"Wallet Consent Disclosure","moment":"Request Comprehension","img":"images/eudi-arf--wal02-credential-document-presentation-layout.png","writeup":"\u003cstrong>Credential/document presentation layout.\u003c/strong>\u003cbr>\u003cbr>From EUDI ARF.","license":"CC-BY-4.0","attribution":"EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"Progress indication during a trust operation","origin":"Bifold","origin_url":"https://github.com/openwallet-foundation/bifold-wallet","use_case":"Accessibility And Inclusion","moment":"Invitation & Onboarding","img":"images/bifold--acc06-progress-indication-during-a-trust-operation.png","writeup":"\u003cstrong>Progress indication during a trust operation.\u003c/strong> The NCCoE study found missing progress feedback left users unsure whether a credential exchange had completed.\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-48 (exemplar): Cut screens that do not carry a decision, and rewrite the rest in plain language - then measure completion. — Progress feedback; NCCoE found its absence left users unsure whether the exchange completed.\u003cbr>\u003cbr>From Bifold.","license":"Apache-2.0","attribution":"Bifold Wallet design guidelines, OpenWallet Foundation, Apache-2.0 (https://www.apache.org/licenses/LICENSE-2.0)"},{"title":"Identification method options: PIN, pattern, biometrics, password, OTP","origin":"EUDI ARF","origin_url":"https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework","use_case":"Mobile Authentication","moment":"Invitation & Onboarding","img":"images/eudi-arf--mob03-identification-method-options-pin-pattern-biometrics.png","writeup":"\u003cstrong>Identification method options: PIN, pattern, biometrics, password, OTP.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-44 (exemplar): Always offer more than one route to prove the same thing. — Multiple authentication routes offered rather than one mandated.\u003cbr>\u003cbr>From EUDI ARF.","license":"CC-BY-4.0","attribution":"EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"Organisation detail: who is asking and what is known about them","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Relying Party Trust","moment":"Counterparty Identification & Verification","img":"images/nl-wallet--rel07-organisation-detail-who-is-asking-and-what-is-known.png","writeup":"\u003cstrong>Organisation detail: who is asking and what is known about them.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-01 (exemplar): Name the relying party and list exactly what will be shared BEFORE the user authorises, every time. — The drill-down behind the relying-party name.\u003cbr>- P-02 (exemplar): Display the relying party's trading or brand name - the name the user would recognise - not its legal entity name or client ID. — Organisation identity rendered for recognition, not for legal precision.\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"Transaction history overview","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Transaction History Audit","moment":"Retrospection & Portfolio","img":"images/nl-wallet--tra01-transaction-history-overview.png","writeup":"\u003cstrong>Transaction history overview.\u003c/strong> The dashboard mandated by eIDAS 2.0 Art. 5a(4), as actually built.\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-16 (exemplar): Put the consent dashboard no more than two clicks from home. — The dashboard itself; check its click-depth from home.\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"Credential expiry warning with renew call-to-action","origin":"EUDI ARF","origin_url":"https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework","use_case":"Recovery Revocation Errors","moment":"Incident, Recovery & Revocation","img":"images/eudi-arf--rec01-credential-expiry-warning-with-renew-call-to-action.png","writeup":"\u003cstrong>Credential expiry warning with renew call-to-action.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-25 (exemplar): Re-confirm long-lived access periodically, and stop accessing data if the user does not respond. — Expiry surfaced with a renewal path.\u003cbr>\u003cbr>From EUDI ARF.","license":"CC-BY-4.0","attribution":"EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"History entry for a cancelled transaction","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Transaction History Audit","moment":"Retrospection & Portfolio","img":"images/nl-wallet--tra04-history-entry-for-a-cancelled-transaction.png","writeup":"\u003cstrong>History entry for a cancelled transaction.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-20 (exemplar): Retain cancelled and expired consents in history, with their original parameters. — Cancelled transactions retained in history.\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"Requested attributes the wallet cannot supply","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Wallet Consent Disclosure","moment":"Incident, Recovery & Revocation","img":"images/nl-wallet--wal11-requested-attributes-the-wallet-cannot-supply.png","writeup":"\u003cstrong>Requested attributes the wallet cannot supply.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-06 (context): Request only the data the service actually needs, and suppress request categories that are irrelevant to the product. — What happens when a request exceeds what the wallet holds.\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"Provenance summary at four manifests, showing the collapse rule","origin":"C2PA UX Guidance","origin_url":"https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf","use_case":"L2 Provenance Summaries","moment":"Invitation & Onboarding","img":"images/c2pa-ux-guidance--fig11-provenance-summary-at-four-manifests-showing-the.png","writeup":"\u003cstrong>Provenance summary at four manifests, showing the collapse rule.\u003c/strong> Part of the two/three/four-manifest collapse-rule series (Figs 9-11)\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-29 (exemplar): ANTI-PATTERN - Overloading: do not bury the protective choice under an avalanche of options. — The collapse rule: beyond four items, collapse to a count rather than enumerate.\u003cbr>- P-47 (exemplar): Treat every prompt as spending a finite attention budget, and be able to state what each one buys. — Collapse beyond four rather than enumerate everything.\u003cbr>\u003cbr>From C2PA UX Guidance.","license":"CC-BY-4.0","attribution":"C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"Review a credential before adding it to the wallet","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Wallet Onboarding Issuance","moment":"Request Comprehension","img":"images/nl-wallet--wal13-review-a-credential-before-adding-it-to-the-wallet.png","writeup":"\u003cstrong>Review a credential before adding it to the wallet.\u003c/strong>\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"Per-credential usage history","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Transaction History Audit","moment":"Retrospection & Portfolio","img":"images/nl-wallet--tra05-per-credential-usage-history.png","writeup":"\u003cstrong>Per-credential usage history.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-17 (exemplar): Keep a holder-accessible log recording time, what was requested, what was actually presented, and to whom. — Same record sliced per credential.\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"Relying-party login with EUDI wallet, desktop","origin":"EUDI ARF","origin_url":"https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework","use_case":"Wallet Onboarding Issuance","moment":"Enrollment / Issuance","img":"images/eudi-arf--wal02-relying-party-login-with-eudi-wallet-desktop.png","writeup":"\u003cstrong>Relying-party login with EUDI wallet, desktop.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-22 (exemplar): Tell the user before the hand-off that they are about to be sent elsewhere, and on return that the session has closed. — Desktop hand-off announcement.\u003cbr>\u003cbr>From EUDI ARF.","license":"CC-BY-4.0","attribution":"EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"Reviewing attributes across multiple cards","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Wallet Consent Disclosure","moment":"Request Comprehension","img":"images/nl-wallet--wal14-reviewing-attributes-across-multiple-cards.png","writeup":"\u003cstrong>Reviewing attributes across multiple cards.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-05 (exemplar): Group requested data into named clusters at the top level and let the user drill down to individual fields. Do not present a flat list of raw attribute names. — Attributes grouped by source credential rather than listed flat.\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"Session expired during disclosure","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Recovery Revocation Errors","moment":"Incident, Recovery & Revocation","img":"images/nl-wallet--rec11-session-expired-during-disclosure.png","writeup":"\u003cstrong>Session expired during disclosure.\u003c/strong> The NCCoE mDL study found QR/session timeout to be the dominant failure mode.\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"Revoking an attestation from the wallet","origin":"IT Wallet","origin_url":"https://github.com/italia/eid-wallet-it-docs","use_case":"Recovery Revocation Errors","moment":"Custody & Recovery Setup","img":"images/it-wallet--rec07-revoking-an-attestation-from-the-wallet.png","writeup":"\u003cstrong>Revoking an attestation from the wallet.\u003c/strong> User-initiated revocation rendered as a first-class flow rather than a support ticket.\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-13 (exemplar): Make withdrawing consent exactly as easy as giving it. — User-initiated revocation as a first-class flow rather than a support ticket.\u003cbr>\u003cbr>From IT Wallet.","license":"CC0-1.0","attribution":"IT-Wallet Technical Specifications, Dipartimento per la trasformazione digitale, CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)"},{"title":"Wallet dashboard, populated","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Wallet Onboarding Issuance","moment":"Invitation & Onboarding","img":"images/nl-wallet--wal11-wallet-dashboard-populated.png","writeup":"\u003cstrong>Wallet dashboard, populated.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-16 (context): Put the consent dashboard no more than two clicks from home. — Home screen from which the two-click budget is measured.\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"Public credential registry entry with verified badge and annotated anatomy","origin":"Aries VCR","origin_url":"https://github.com/bcgov/aries-vcr","use_case":"Credential Registry And Issuers","moment":"Retrospection & Portfolio","img":"images/aries-vcr--cre01-public-credential-registry-entry-with-verified-badge.png","writeup":"\u003cstrong>Public credential registry entry with verified badge and annotated anatomy.\u003c/strong> A public, searchable registry of who holds which credential, with issuing authority, effective and expiry dates and a 'Credential verified' badge. The verifier-side counterpart to the holder-side wallet.\u003cbr>\u003cbr>From Aries VCR.","license":"Apache-2.0","attribution":"Aries VCR / OrgBook BC, Province of British Columbia, Apache-2.0 (https://www.apache.org/licenses/LICENSE-2.0)"},{"title":"No connectivity","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Recovery Revocation Errors","moment":"Incident, Recovery & Revocation","img":"images/nl-wallet--rec16-no-connectivity.png","writeup":"\u003cstrong>No connectivity.\u003c/strong> Offline behaviour matters disproportionately for proximity presentation, which is designed to work without connectivity.\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"History entry recording that nothing was shared","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Transaction History Audit","moment":"Retrospection & Portfolio","img":"images/nl-wallet--tra03-history-entry-recording-that-nothing-was-shared.png","writeup":"\u003cstrong>History entry recording that nothing was shared.\u003c/strong> Logs the non-event. A refusal is recorded as explicitly as a disclosure, which is what makes the log trustworthy.\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-17 (exemplar): Keep a holder-accessible log recording time, what was requested, what was actually presented, and to whom. — Logs the non-event. Recording a refusal as explicitly as a disclosure is what makes the log trustworthy.\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"L3 tree view, selectable manifests with assertion panel","origin":"C2PA UX Guidance","origin_url":"https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf","use_case":"L3 Detail And Repair","moment":"Request Comprehension","img":"images/c2pa-ux-guidance--fig17-l3-tree-view-selectable-manifests-with-assertion.png","writeup":"\u003cstrong>L3 tree view, selectable manifests with assertion panel.\u003c/strong>\u003cbr>\u003cbr>From C2PA UX Guidance.","license":"CC-BY-4.0","attribution":"C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"Notification example","origin":"BC Wallet","origin_url":"https://github.com/bcgov/bc-wallet-mobile","use_case":"Wallet Visual Language","moment":"Incident, Recovery & Revocation","img":"images/bc-wallet--wal20-notification-example.png","writeup":"\u003cstrong>Notification example.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-47 (context): Treat every prompt as spending a finite attention budget, and be able to state what each one buys. — A notification - each one spends attention budget.\u003cbr>\u003cbr>From BC Wallet.","license":"Apache-2.0","attribution":"BC Wallet, Province of British Columbia, Apache-2.0 (https://www.apache.org/licenses/LICENSE-2.0)"},{"title":"Privacy explainer sheet for card data","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Transaction History Audit","moment":"Custody & Recovery Setup","img":"images/nl-wallet--tra06-privacy-explainer-sheet-for-card-data.png","writeup":"\u003cstrong>Privacy explainer sheet for card data.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-15 (context): On revocation, state plainly what happens to data already shared. — Where post-revocation data handling would be explained.\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"Transaction receipt: what was shared, with whom, when and why","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Transaction History Audit","moment":"Retrospection & Portfolio","img":"images/nl-wallet--tra02-transaction-receipt-what-was-shared-with-whom-when-a.png","writeup":"\u003cstrong>Transaction receipt: what was shared, with whom, when and why.\u003c/strong> This is the identity-wallet receipt UI that the C2PA worksheet said had no prior art. It exists and it ships. Answers Whitten &amp; Tygar's problem: show what was actually sent, after the fact.\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-17 (exemplar): Keep a holder-accessible log recording time, what was requested, what was actually presented, and to whom. — Time, counterparty, reason and attributes actually shared - the rule realised in full.\u003cbr>- P-45 (exemplar): Tell the user, unmistakably, whenever they are being monitored or tracked. — The record that makes observation visible after the fact.\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"Untrusted relying-party alert with report action","origin":"EUDI ARF","origin_url":"https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework","use_case":"Relying Party Trust","moment":"Counterparty Identification & Verification","img":"images/eudi-arf--rel01-untrusted-relying-party-alert-with-report-action.png","writeup":"\u003cstrong>Untrusted relying-party alert with report action.\u003c/strong> Phishing-resistant verifier pattern: 'Do not share sensitive information with the current recipient until their validity is confirmed', with a REPORT action. The negative counterpart to the trusted badge.\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-04 (exemplar): Warn the user to share only with relying parties they recognise, at the moment of sharing. — 'Do not share sensitive information with the current recipient until their validity is confirmed', with a REPORT action.\u003cbr>\u003cbr>From EUDI ARF.","license":"CC-BY-4.0","attribution":"EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"Update manifest without thumbnail","origin":"C2PA UX Guidance","origin_url":"https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf","use_case":"L3 Detail And Repair","moment":"Retrospection & Portfolio","img":"images/c2pa-ux-guidance--fig21-update-manifest-without-thumbnail.png","writeup":"\u003cstrong>Update manifest without thumbnail.\u003c/strong> Closest thing to a receipt UI in any spec (Figs 20-21)\u003cbr>\u003cbr>From C2PA UX Guidance.","license":"CC-BY-4.0","attribution":"C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"Swiss e-ID credential card art","origin":"swiyu","origin_url":"https://github.com/swiyu-admin-ch/eidch-android-wallet","use_case":"Wallet Visual Language","moment":"Invitation & Onboarding","img":"images/swiyu--wal09-swiss-e-id-credential-card-art.png","writeup":"\u003cstrong>Swiss e-ID credential card art.\u003c/strong> swiyu's visual language derives from the holographic security feature of Swiss physical ID documents, deliberately borrowing the trust cues of the paper artefact.\u003cbr>\u003cbr>From swiyu.","license":"MIT","attribution":"swiyu Swiss e-ID wallet, Swiss Confederation, MIT (https://opensource.org/licenses/MIT)"},{"title":"Choosing between alternative credentials that satisfy the same request","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Wallet Consent Disclosure","moment":"Consent & Disclosure Decision","img":"images/nl-wallet--wal15-choosing-between-alternative-credentials-that-satisf.png","writeup":"\u003cstrong>Choosing between alternative credentials that satisfy the same request.\u003c/strong> Rarely specified anywhere: the user picks WHICH credential satisfies a request, not just which attributes.\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-38 (exemplar): When offering a choice of identity providers or wallets, make every option visually equal in size and weight. — Choosing between credentials that satisfy the same request.\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"Verify the issuing organisation before accepting a credential","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Wallet Onboarding Issuance","moment":"Enrollment / Issuance","img":"images/nl-wallet--wal12-verify-the-issuing-organisation-before-accepting-a-c.png","writeup":"\u003cstrong>Verify the issuing organisation before accepting a credential.\u003c/strong>\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"Check the PID data being issued during wallet personalisation","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Wallet Onboarding Issuance","moment":"Request Comprehension","img":"images/nl-wallet--wal16-check-the-pid-data-being-issued-during-wallet-person.png","writeup":"\u003cstrong>Check the PID data being issued during wallet personalisation.\u003c/strong> The moment the user first sees what the state asserts about them, before accepting it into the wallet.\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"L3 thumbnail labels","origin":"C2PA UX Guidance","origin_url":"https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf","use_case":"Ai Content Disclosure","moment":"Request Comprehension","img":"images/c2pa-ux-guidance--fig27-l3-thumbnail-labels.png","writeup":"\u003cstrong>L3 thumbnail labels.\u003c/strong> Part of the L3 labeling series (Figs 27-30)\u003cbr>\u003cbr>From C2PA UX Guidance.","license":"CC-BY-4.0","attribution":"C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"L3 manifest panel with description","origin":"C2PA UX Guidance","origin_url":"https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf","use_case":"Ai Content Disclosure","moment":"Request Comprehension","img":"images/c2pa-ux-guidance--fig28-l3-manifest-panel-with-description.png","writeup":"\u003cstrong>L3 manifest panel with description.\u003c/strong> Part of the L3 labeling series (Figs 27-30)\u003cbr>\u003cbr>From C2PA UX Guidance.","license":"CC-BY-4.0","attribution":"C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"L3 labeled tree view","origin":"C2PA UX Guidance","origin_url":"https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf","use_case":"Ai Content Disclosure","moment":"Request Comprehension","img":"images/c2pa-ux-guidance--fig30-l3-labeled-tree-view.png","writeup":"\u003cstrong>L3 labeled tree view.\u003c/strong> Part of the L3 labeling series (Figs 27-30)\u003cbr>\u003cbr>From C2PA UX Guidance.","license":"CC-BY-4.0","attribution":"C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"Left-to-right and right-to-left rendering side by side","origin":"Bifold","origin_url":"https://github.com/openwallet-foundation/bifold-wallet","use_case":"Accessibility And Inclusion","moment":"Invitation & Onboarding","img":"images/bifold--acc04-left-to-right-and-right-to-left-rendering-side-by-si.png","writeup":"\u003cstrong>Left-to-right and right-to-left rendering side by side.\u003c/strong> English and Arabic RTL of the same trust prompt. Bidirectional support is an inclusion requirement that trust UI routinely fails.\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-43 (exemplar): Usability-test with a demographically diverse panel, as a condition of accreditation. — LTR and RTL of the same trust prompt - inclusion made visible.\u003cbr>\u003cbr>From Bifold.","license":"Apache-2.0","attribution":"Bifold Wallet design guidelines, OpenWallet Foundation, Apache-2.0 (https://www.apache.org/licenses/LICENSE-2.0)"},{"title":"PIN confirmation as the act of consent","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Mobile Authentication","moment":"Consent & Disclosure Decision","img":"images/nl-wallet--mob10-pin-confirmation-as-the-act-of-consent.png","writeup":"\u003cstrong>PIN confirmation as the act of consent.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-11 (exemplar): Ask for consent once, at the party that has the context to explain it. Do not re-ask at the credential holder. — PIN entry IS the consent act; no separate re-confirmation screen follows.\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"Multiple origins plus manifests","origin":"C2PA","origin_url":"https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf","use_case":"L2 provenance summaries","moment":"Request Comprehension","img":"images/l2-provenance-summaries--c2pa-fig13.png","writeup":"\u003cstrong>Provenance summary, multiple origins and manifests.\u003c/strong>\u003cbr>\u003cbr>From the C2PA User Experience Guidance for Implementers.","license":"CC-BY-4.0","attribution":"C2PA User Experience Guidance for Implementers, CC BY 4.0"},{"title":"Customized combinatory summaries by vertical","origin":"C2PA","origin_url":"https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf","use_case":"L2 provenance summaries","moment":"Request Comprehension","img":"images/l2-provenance-summaries--c2pa-fig14.png","writeup":"\u003cstrong>Customized summary combinations.\u003c/strong>\u003cbr>\u003cbr>From the C2PA User Experience Guidance for Implementers.","license":"CC-BY-4.0","attribution":"C2PA User Experience Guidance for Implementers, CC BY 4.0"},{"title":"PIN recovery blocked because the identity does not match","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Recovery Revocation Errors","moment":"Incident, Recovery & Revocation","img":"images/nl-wallet--rec14-pin-recovery-blocked-because-the-identity-does-not-m.png","writeup":"\u003cstrong>PIN recovery blocked because the identity does not match.\u003c/strong>\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"Review new and updated credentials together","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Wallet Onboarding Issuance","moment":"Enrollment / Issuance","img":"images/nl-wallet--wal14-review-new-and-updated-credentials-together.png","writeup":"\u003cstrong>Review new and updated credentials together.\u003c/strong> Shows the delta between what you had and what you are being given, which is the Bravo-Lillo prescription: make the change the thing you interact with.\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-26 (exemplar): When re-confirming, state explicitly that nothing else about the arrangement is changing. — Shows the delta between what you held and what you are being given - the change is the thing you interact with.\u003cbr>- P-37 (exemplar): When you change a privacy notice, keep prior versions accessible and highlight what changed. — Old and new shown together so the change is visible.\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"Attribute label conventions","origin":"EUDI ARF","origin_url":"https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework","use_case":"Wallet Consent Disclosure","moment":"Request Comprehension","img":"images/eudi-arf--wal03-attribute-label-conventions.png","writeup":"\u003cstrong>Attribute label conventions.\u003c/strong> Relevant to the NCCoE finding that mDL attribute labels ('issuing authority', 'administrative number') are unintelligible to holders.\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-05 (context): Group requested data into named clusters at the top level and let the user drill down to individual fields. Do not present a flat list of raw attribute names. — Label conventions - the layer where cluster naming would live.\u003cbr>- P-19 (exemplar): Use the vocabulary users have actually learned, not your internal terminology. — Attribute label conventions - the vocabulary layer.\u003cbr>\u003cbr>From EUDI ARF.","license":"CC-BY-4.0","attribution":"EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"PIN recovery, entry point","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Recovery Revocation Errors","moment":"Incident, Recovery & Revocation","img":"images/nl-wallet--rec13-pin-recovery-entry-point.png","writeup":"\u003cstrong>PIN recovery, entry point.\u003c/strong> Korir et al. found ~50% of users assumed a third party would recover access for them. This is where that assumption is either met or corrected.\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-44 (exemplar): Always offer more than one route to prove the same thing. — A second route back in when the first fails.\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"Unknown-source warning chip","origin":"CAI Verify","origin_url":"https://github.com/contentauth/opensource.contentauth.org","use_case":"Provenance Display Implementations","moment":"Incident, Recovery & Revocation","img":"images/cai-verify--pro03-unknown-source-warning-chip.png","writeup":"\u003cstrong>Unknown-source warning chip.\u003c/strong> 'This Content Credential was issued by an unknown source.' The untrusted-signer state rendered as a neutral chip rather than a red alarm, consistent with C2PA Finding A.\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-34 (exemplar): ANTI-PATTERN - Left in the dark: do not hide controls or leave the user unsure how data is processed. — 'Issued by an unknown source' rendered as a neutral chip - no silent default.\u003cbr>\u003cbr>From CAI Verify.","license":"CC-BY-4.0","attribution":"Content Authenticity Initiative open-source documentation, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"Content summary card: issuer, date, process and AI tool used","origin":"CAI Verify","origin_url":"https://github.com/contentauth/opensource.contentauth.org","use_case":"Provenance Display Implementations","moment":"Request Comprehension","img":"images/cai-verify--pro02-content-summary-card-issuer-date-process-and-ai-tool.png","writeup":"\u003cstrong>Content summary card: issuer, date, process and AI tool used.\u003c/strong> The L2 summary from the C2PA spec, as actually built.\u003cbr>\u003cbr>From CAI Verify.","license":"CC-BY-4.0","attribution":"Content Authenticity Initiative open-source documentation, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"Incorrect credentials entry","origin":"EUDI ARF","origin_url":"https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework","use_case":"Mobile Authentication","moment":"Incident, Recovery & Revocation","img":"images/eudi-arf--mob01-incorrect-credentials-entry.png","writeup":"\u003cstrong>Incorrect credentials entry.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-41 (exemplar): Do not reveal which credential was wrong. — Failed credential entry without naming which field was wrong.\u003cbr>\u003cbr>From EUDI ARF.","license":"CC-BY-4.0","attribution":"EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"Logo usage guidelines","origin":"Login.gov","origin_url":"https://github.com/18F/identity-dev-docs","use_case":"Prescriptive Practices","moment":"Invitation & Onboarding","img":"images/logingov--pra06-logo-usage-guidelines.png","writeup":"\u003cstrong>Logo usage guidelines.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-40 (context): Never use an icon alone where a text label carries the meaning. — Co-branding spec including a labelled 'Show password' control.\u003cbr>- P-42 (exemplar): Allow password visibility toggling and permit paste. — Sign-in page showing an explicit 'Show password' toggle.\u003cbr>\u003cbr>From Login.gov.","license":"CC0-1.0","attribution":"Login.gov developer documentation, GSA/18F, CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)"},{"title":"Presenting a QR code for proximity engagement","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Proximity Cross Device","moment":"Execution & Confirmation","img":"images/nl-wallet--pro06-presenting-a-qr-code-for-proximity-engagement.png","writeup":"\u003cstrong>Presenting a QR code for proximity engagement.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-23 (exemplar): Cross-device handoff must not require the user to retype anything. — Scan-only engagement with no manual code entry.\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"Repeated failed authentication with lock-out timer","origin":"EUDI ARF","origin_url":"https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework","use_case":"Mobile Authentication","moment":"Incident, Recovery & Revocation","img":"images/eudi-arf--mob02-repeated-failed-authentication-with-lock-out-timer.png","writeup":"\u003cstrong>Repeated failed authentication with lock-out timer.\u003c/strong> Rate-limiting surfaced to the user as a countdown rather than a dead end.\u003cbr>\u003cbr>From EUDI ARF.","license":"CC-BY-4.0","attribution":"EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"Error message construction","origin":"EUDI ARF","origin_url":"https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework","use_case":"Recovery Revocation Errors","moment":"Incident, Recovery & Revocation","img":"images/eudi-arf--rec05-error-message-construction.png","writeup":"\u003cstrong>Error message construction.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-41 (context): Do not reveal which credential was wrong. — Error message construction guidance.\u003cbr>\u003cbr>From EUDI ARF.","license":"CC-BY-4.0","attribution":"EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"Remote presentation, cross device","origin":"IT Wallet","origin_url":"https://github.com/italia/eid-wallet-it-docs","use_case":"Proximity Cross Device","moment":"Execution & Confirmation","img":"images/it-wallet--pro04-remote-presentation-cross-device.png","writeup":"\u003cstrong>Remote presentation, cross device.\u003c/strong> Cross-device hand-off is precisely where the NIST NCCoE study found consent confusion and QR timeout failures.\u003cbr>\u003cbr>From IT Wallet.","license":"CC0-1.0","attribution":"IT-Wallet Technical Specifications, Dipartimento per la trasformazione digitale, CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)"},{"title":"Wallet deactivation","origin":"IT Wallet","origin_url":"https://github.com/italia/eid-wallet-it-docs","use_case":"Recovery Revocation Errors","moment":"Custody & Recovery Setup","img":"images/it-wallet--rec08-wallet-deactivation.png","writeup":"\u003cstrong>Wallet deactivation.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-13 (exemplar): Make withdrawing consent exactly as easy as giving it. — Whole-wallet deactivation available to the user.\u003cbr>\u003cbr>From IT Wallet.","license":"CC0-1.0","attribution":"IT-Wallet Technical Specifications, Dipartimento per la trasformazione digitale, CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)"},{"title":"Dashboard with credential expiring in 10 days","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Recovery Revocation Errors","moment":"Incident, Recovery & Revocation","img":"images/nl-wallet--rec12-dashboard-with-credential-expiring-in-10-days.png","writeup":"\u003cstrong>Dashboard with credential expiring in 10 days.\u003c/strong> One of a graded series (10 days / 10 hours / 10 minutes): urgency escalates with time remaining.\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-18 (exemplar): Use a small fixed set of status values on the dashboard, not free-form or graded states. — A small fixed status vocabulary rather than a graded meter.\u003cbr>- P-25 (exemplar): Re-confirm long-lived access periodically, and stop accessing data if the user does not respond. — Graded urgency as expiry approaches.\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"Compare state, two manifest thumbnails side by side","origin":"C2PA UX Guidance","origin_url":"https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf","use_case":"L3 Detail And Repair","moment":"Invitation & Onboarding","img":"images/c2pa-ux-guidance--fig18-compare-state-two-manifest-thumbnails-side-by-si.png","writeup":"\u003cstrong>Compare state, two manifest thumbnails side by side.\u003c/strong> Nearest existing analogue to the simulation pattern\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-37 (exemplar): When you change a privacy notice, keep prior versions accessible and highlight what changed. — Side-by-side comparison of two states.\u003cbr>\u003cbr>From C2PA UX Guidance.","license":"CC-BY-4.0","attribution":"C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"Verify the relying party's URL before disclosing","origin":"NL Wallet","origin_url":"https://github.com/MinBZK/nl-wallet","use_case":"Relying Party Trust","moment":"Counterparty Identification & Verification","img":"images/nl-wallet--rel05-verify-the-relying-party-s-url-before-disclosing.png","writeup":"\u003cstrong>Verify the relying party's URL before disclosing.\u003c/strong> Directly targets the failure mode Thompson et al. 2019 documented: users could not read the address bar. Here the URL check is a dedicated step, not chrome.\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-02 (exemplar): Display the relying party's trading or brand name - the name the user would recognise - not its legal entity name or client ID. — A dedicated URL-check step.\u003cbr>\u003cbr>From NL Wallet.","license":"EUPL-1.2","attribution":"NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)"},{"title":"Full three-panel Content Credentials inspector","origin":"CAI Verify","origin_url":"https://github.com/contentauth/opensource.contentauth.org","use_case":"Provenance Display Implementations","moment":"Request Comprehension","img":"images/cai-verify--pro01-full-three-panel-content-credentials-inspector.png","writeup":"\u003cstrong>Full three-panel Content Credentials inspector.\u003c/strong> The wave-1 C2PA spec figures realised as shipped product. Left: manifest list plus 'Search for possible matches'. Centre: asset with the cr pin. Right: AI-generated disclosure, app or device used, recorded-by and actions.\u003cbr>\u003cbr>From CAI Verify.","license":"CC-BY-4.0","attribution":"Content Authenticity Initiative open-source documentation, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"Flexible input handling","origin":"EUDI ARF","origin_url":"https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework","use_case":"Mobile Authentication","moment":"Invitation & Onboarding","img":"images/eudi-arf--mob05-flexible-input-handling.png","writeup":"\u003cstrong>Flexible input handling.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-42 (exemplar): Allow password visibility toggling and permit paste. — Flexible input handling.\u003cbr>\u003cbr>From EUDI ARF.","license":"CC-BY-4.0","attribution":"EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"},{"title":"Authentication, same device","origin":"IT Wallet","origin_url":"https://github.com/italia/eid-wallet-it-docs","use_case":"Mobile Authentication","moment":"Invitation & Onboarding","img":"images/it-wallet--mob08-authentication-same-device.png","writeup":"\u003cstrong>Authentication, same device.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-21 (exemplar): Authentication via redirect must take no more steps than opening your app directly. — Same-device authentication path to audit for step parity.\u003cbr>\u003cbr>From IT Wallet.","license":"CC0-1.0","attribution":"IT-Wallet Technical Specifications, Dipartimento per la trasformazione digitale, CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)"},{"title":"Remote presentation, same device","origin":"IT Wallet","origin_url":"https://github.com/italia/eid-wallet-it-docs","use_case":"Proximity Cross Device","moment":"Execution & Confirmation","img":"images/it-wallet--pro03-remote-presentation-same-device.png","writeup":"\u003cstrong>Remote presentation, same device.\u003c/strong>\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-22 (context): Tell the user before the hand-off that they are about to be sent elsewhere, and on return that the session has closed. — Full same-device journey including return.\u003cbr>\u003cbr>From IT Wallet.","license":"CC0-1.0","attribution":"IT-Wallet Technical Specifications, Dipartimento per la trasformazione digitale, CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)"},{"title":"Regenerated QR code after timeout","origin":"NIST NCCoE mDL","origin_url":"https://github.com/usnistgov/nccoe-mdl-project-static-website","use_case":"Mdl Usability Evidence","moment":"Invitation & Onboarding","img":"images/nccoe-mdl--mdl07-regenerated-qr-code-after-timeout.png","writeup":"\u003cstrong>Regenerated QR code after timeout.\u003c/strong> The other half of the pair. Compare the two: visually different, semantically the same request.\u003cbr>\u003cbr>\u003cstrong>Practices demonstrated\u003c/strong>\u003cbr>- P-23 (antipattern): Cross-device handoff must not require the user to retype anything. — After ~40s it regenerates as a visually DIFFERENT code meaning the same thing. Field-evidenced failure - use as a paired card.\u003cbr>\u003cbr>From NIST NCCoE mDL.","license":"US-Gov-PD","attribution":"NIST National Cybersecurity Center of Excellence, mDL project"}];</script>
+<script>
+(function(){
+  var data = window.__TUX_DATA || [];
+  var tiles = [].slice.call(document.querySelectorAll('.tile'));
+  var q=document.getElementById('q'), mf=document.getElementById('mf'), of=document.getElementById('of'), cnt=document.getElementById('cnt');
+  function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+  function apply(){
+    var s=(q&&q.value||'').toLowerCase(), m=mf?mf.value:'', o=of?of.value:'', n=0;
+    for(var i=0;i<tiles.length;i++){var t=tiles[i];
+      var ok=(!s||t.getAttribute('data-search').indexOf(s)>=0)&&(!m||t.getAttribute('data-moment')===m)&&(!o||t.getAttribute('data-origin')===o);
+      t.style.display=ok?'':'none'; if(ok)n++;
+    }
+    if(cnt) cnt.textContent=n+' of '+tiles.length+' screens';
+  }
+  if(q) q.addEventListener('input',apply);
+  if(mf) mf.addEventListener('change',apply);
+  if(of) of.addEventListener('change',apply);
+  var lb=document.getElementById('lb'), lbc=document.getElementById('lbc');
+  function openTile(i){var d=data[i]; if(!d||!lbc)return;
+    var h='<button class="x" onclick="__lbclose()" aria-label="Close">&times;</button>';
+    if(d.img) h+='<div class="lbimg"><img src="'+esc(d.img)+'" alt=""></div>';
+    h+='<div class="lbb"><h3>'+esc(d.title)+'</h3><p class="small muted">'+esc(d.origin);
+    if(d.origin_url) h+=' &middot; <a href="'+esc(d.origin_url)+'" target="_blank" rel="noopener noreferrer">source</a>';
+    if(d.moment) h+=' &middot; '+esc(d.moment);
+    if(d.use_case) h+=' &middot; '+esc(d.use_case);
+    h+='</p>';
+    if(d.writeup) h+='<div class="wu">'+d.writeup+'</div>';
+    if(d.attribution) h+='<p class="small muted" style="margin-top:12px">'+esc(d.attribution)+(d.license?' &middot; '+esc(d.license):'')+'</p>';
+    h+='<p class="small" style="margin-top:12px"><button type="button" class="live" data-live>Rate, discuss or contribute on the live platform &rarr;</button></p></div>';
+    lbc.innerHTML=h; lb.classList.add('on');
+  }
+  window.__lbclose=function(){lb.classList.remove('on');};
+  for(var i=0;i<tiles.length;i++){(function(t){t.addEventListener('click',function(){openTile(+t.getAttribute('data-i'));});})(tiles[i]);}
+  if(lb) lb.addEventListener('click',function(e){if(e.target===lb)__lbclose();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')__lbclose();});
+  apply();
+})();</script>
+<script>
+(function(){
+  var live = document.getElementById('lmLink');
+  var ovl = document.getElementById('liveModal');
+  if(live) live.href = document.documentElement.getAttribute('data-live-url') || '#';
+  window.__closeLive = function(){ ovl.classList.remove('on'); };
+  document.addEventListener('click', function(e){
+    var t = e.target.closest('[data-live]');
+    if(t){ e.preventDefault(); ovl.classList.add('on'); }
+    else if(e.target === ovl){ window.__closeLive(); }
+  });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') window.__closeLive(); });
+})();</script>
+</body>
+</html>

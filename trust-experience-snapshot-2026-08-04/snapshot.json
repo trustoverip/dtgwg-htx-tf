@@ -1,0 +1,15 @@
+{
+  "generator": "validant Human Trust Experience research exporter",
+  "generator_version": "1.0.0",
+  "kind": "human-trust-experience-full-snapshot",
+  "extracted_at": "2026-08-04T15:51:04.407Z",
+  "source_url": "https://platform.validant.ai/trust-experience",
+  "live_research_url": "https://platform.validant.ai/trust-experience#research",
+  "note": "Static self-contained snapshot: index.html = explorer, research.html = research, images/ = bundled screenshots. Ratings, contributing and removal are live-only.",
+  "counts": {
+    "screens": 74,
+    "images_bundled": 74,
+    "moments": 13,
+    "best_practices": 20
+  }
+}
