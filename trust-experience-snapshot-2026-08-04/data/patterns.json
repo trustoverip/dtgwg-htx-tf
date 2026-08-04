@@ -1,0 +1,1662 @@
+[
+  {
+    "slug": "c2pa-ux-guidance--fig07-the-depth-versus-breadth-spectrum-for-summary-de",
+    "title": "The depth-versus-breadth spectrum for summary design",
+    "origin_party": "C2PA UX Guidance",
+    "origin_url": "https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf",
+    "use_case": "L2 Provenance Summaries",
+    "facets": {
+      "domain": "#dom-provenance",
+      "modality": [],
+      "patterns": [
+        "#pat-progressive-disclosure"
+      ],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-comprehension",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/c2pa-ux-guidance--fig07-the-depth-versus-breadth-spectrum-for-summary-de.png"
+  },
+  {
+    "slug": "eudi-ts1--rel02-wallet-welcome-screen-carrying-the-eudi-trust-mark-w",
+    "title": "Wallet welcome screen carrying the EUDI Trust Mark with trusted-list and information links",
+    "origin_party": "EUDI TS1",
+    "origin_url": "https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications",
+    "use_case": "Relying Party Trust",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [
+        "#mech-provenance"
+      ],
+      "regulatory": [
+        "#reg-eidas2"
+      ],
+      "trust_moment": "#tm-orientation",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "Specification of EUDI Wallet Trust Mark (TS1), (c) European Union, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/eudi-ts1--rel02-wallet-welcome-screen-carrying-the-eudi-trust-mark-w.png"
+  },
+  {
+    "slug": "nl-wallet--wal13-stop-and-confirm-sheet-when-abandoning-disclosure",
+    "title": "Stop-and-confirm sheet when abandoning disclosure",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Wallet Consent Disclosure",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [
+        "#pat-progressive-disclosure"
+      ],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-disclosure",
+      "quality_flags": []
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--wal13-stop-and-confirm-sheet-when-abandoning-disclosure.png"
+  },
+  {
+    "slug": "eudi-arf--pro01-sharing-channel-chooser-qr-code-versus-nfc-proximity",
+    "title": "Sharing channel chooser: QR code versus NFC proximity",
+    "origin_party": "EUDI ARF",
+    "origin_url": "https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework",
+    "use_case": "Proximity Cross Device",
+    "facets": {
+      "domain": "#dom-wallet",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [
+        "#pat-progressive-disclosure"
+      ],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-orientation",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/eudi-arf--pro01-sharing-channel-chooser-qr-code-versus-nfc-proximity.png"
+  },
+  {
+    "slug": "eudi-arf--wal01-relying-party-attribute-request-with-mandatory-versu",
+    "title": "Relying-party attribute request with mandatory versus optional split and trusted-RP explainer",
+    "origin_party": "EUDI ARF",
+    "origin_url": "https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework",
+    "use_case": "Wallet Consent Disclosure",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [
+        "#pat-selective-disclosure",
+        "#pat-progressive-disclosure"
+      ],
+      "mechanisms": [],
+      "regulatory": [
+        "#reg-eidas2"
+      ],
+      "trust_moment": "#tm-disclosure",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/eudi-arf--wal01-relying-party-attribute-request-with-mandatory-versu.png"
+  },
+  {
+    "slug": "eudi-arf--wal05-confirmation-dialogs-before-consequential-actions",
+    "title": "Confirmation dialogs before consequential actions",
+    "origin_party": "EUDI ARF",
+    "origin_url": "https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework",
+    "use_case": "Wallet Consent Disclosure",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [
+        "#pat-progressive-disclosure"
+      ],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-comprehension",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/eudi-arf--wal05-confirmation-dialogs-before-consequential-actions.png"
+  },
+  {
+    "slug": "nl-wallet--wal15-first-run-introduction",
+    "title": "First-run introduction",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Wallet Onboarding Issuance",
+    "facets": {
+      "domain": "#dom-wallet",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-orientation",
+      "quality_flags": []
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--wal15-first-run-introduction.png"
+  },
+  {
+    "slug": "bifold--acc10-icon-plus-text-pairing",
+    "title": "Icon plus text pairing",
+    "origin_party": "Bifold",
+    "origin_url": "https://github.com/openwallet-foundation/bifold-wallet",
+    "use_case": "Accessibility And Inclusion",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-comprehension",
+      "quality_flags": [
+        "#q-accessible"
+      ]
+    },
+    "license": "Apache-2.0",
+    "attribution": "Bifold Wallet design guidelines, OpenWallet Foundation, Apache-2.0 (https://www.apache.org/licenses/LICENSE-2.0)",
+    "image": "images/bifold--acc10-icon-plus-text-pairing.png"
+  },
+  {
+    "slug": "eudi-arf--wal01-relying-party-login-with-eudi-wallet-mobile",
+    "title": "Relying-party login with EUDI wallet, mobile",
+    "origin_party": "EUDI ARF",
+    "origin_url": "https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework",
+    "use_case": "Wallet Onboarding Issuance",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [
+        "#pat-progressive-disclosure"
+      ],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-issuance",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/eudi-arf--wal01-relying-party-login-with-eudi-wallet-mobile.png"
+  },
+  {
+    "slug": "c2pa-ux-guidance--fig26-l2-interaction-patterns-for-disclosure-accordion",
+    "title": "L2 interaction patterns for disclosure, accordion behavior",
+    "origin_party": "C2PA UX Guidance",
+    "origin_url": "https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf",
+    "use_case": "Ai Content Disclosure",
+    "facets": {
+      "domain": "#dom-aitrust",
+      "verdict": "#verdict-exemplar",
+      "modality": [],
+      "patterns": [
+        "#pat-progressive-disclosure"
+      ],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-orientation",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/c2pa-ux-guidance--fig26-l2-interaction-patterns-for-disclosure-accordion.png"
+  },
+  {
+    "slug": "c2pa-ux-guidance--fig22-the-journey-from-l2-into-l3",
+    "title": "The journey from L2 into L3",
+    "origin_party": "C2PA UX Guidance",
+    "origin_url": "https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf",
+    "use_case": "L3 Detail And Repair",
+    "facets": {
+      "domain": "#dom-provenance",
+      "verdict": "#verdict-exemplar",
+      "modality": [],
+      "patterns": [
+        "#pat-progressive-disclosure"
+      ],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-orientation",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/c2pa-ux-guidance--fig22-the-journey-from-l2-into-l3.png"
+  },
+  {
+    "slug": "ai-content-disclosure--c2pa-fig23",
+    "title": "Full progressive disclosure UI carrying AI labels",
+    "origin_party": "C2PA",
+    "origin_url": "https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf",
+    "use_case": "AI content disclosure",
+    "facets": {
+      "domain": "#dom-aitrust",
+      "verdict": "#verdict-exemplar",
+      "modality": [],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-comprehension",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "C2PA User Experience Guidance for Implementers, CC BY 4.0",
+    "image": "images/ai-content-disclosure--c2pa-fig23.png"
+  },
+  {
+    "slug": "nccoe-mdl--mdl06-initial-browser-qr-code",
+    "title": "Initial browser QR code",
+    "origin_party": "NIST NCCoE mDL",
+    "origin_url": "https://github.com/usnistgov/nccoe-mdl-project-static-website",
+    "use_case": "Mdl Usability Evidence",
+    "facets": {
+      "domain": "#dom-mdl",
+      "verdict": "#verdict-antipattern",
+      "modality": [
+        "#mod-mobile",
+        "#mod-desktop"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-orientation",
+      "quality_flags": []
+    },
+    "license": "US-Gov-PD",
+    "attribution": "NIST National Cybersecurity Center of Excellence, mDL project",
+    "image": "images/nccoe-mdl--mdl06-initial-browser-qr-code.png"
+  },
+  {
+    "slug": "c2pa-ux-guidance--fig01-the-four-disclosure-levels-l1-through-l4-as-a-si",
+    "title": "The four disclosure levels, L1 through L4, as a single diagram",
+    "origin_party": "C2PA UX Guidance",
+    "origin_url": "https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf",
+    "use_case": "Disclosure Model",
+    "facets": {
+      "domain": "#dom-provenance",
+      "verdict": "#verdict-exemplar",
+      "modality": [],
+      "patterns": [
+        "#pat-progressive-disclosure"
+      ],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-orientation",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/c2pa-ux-guidance--fig01-the-four-disclosure-levels-l1-through-l4-as-a-si.png"
+  },
+  {
+    "slug": "c2pa-ux-guidance--fig31-manifest-storage-settings-local-versus-remote-wi",
+    "title": "Manifest storage settings, local versus remote, with the privacy tradeoff surfaced",
+    "origin_party": "C2PA UX Guidance",
+    "origin_url": "https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf",
+    "use_case": "Creator Control",
+    "facets": {
+      "domain": "#dom-provenance",
+      "verdict": "#verdict-exemplar",
+      "modality": [],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-custody",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/c2pa-ux-guidance--fig31-manifest-storage-settings-local-versus-remote-wi.png"
+  },
+  {
+    "slug": "nl-wallet--pro08-proximity-connection-failed",
+    "title": "Proximity connection failed",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Proximity Cross Device",
+    "facets": {
+      "domain": "#dom-wallet",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-repair",
+      "quality_flags": []
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--pro08-proximity-connection-failed.png"
+  },
+  {
+    "slug": "time-based-media--c2pa-fig33",
+    "title": "Persistent indicator with background",
+    "origin_party": "C2PA",
+    "origin_url": "https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf",
+    "use_case": "Time-based media",
+    "facets": {
+      "domain": "#dom-provenance",
+      "modality": [
+        "#mod-desktop"
+      ],
+      "patterns": [
+        "#pat-three-state"
+      ],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-orientation",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "C2PA User Experience Guidance for Implementers, CC BY 4.0",
+    "image": "images/time-based-media--c2pa-fig33.png"
+  },
+  {
+    "slug": "eudi-arf--wal02-credential-document-presentation-layout",
+    "title": "Credential/document presentation layout",
+    "origin_party": "EUDI ARF",
+    "origin_url": "https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework",
+    "use_case": "Wallet Consent Disclosure",
+    "facets": {
+      "domain": "#dom-wallet",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-comprehension",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/eudi-arf--wal02-credential-document-presentation-layout.png"
+  },
+  {
+    "slug": "bifold--acc06-progress-indication-during-a-trust-operation",
+    "title": "Progress indication during a trust operation",
+    "origin_party": "Bifold",
+    "origin_url": "https://github.com/openwallet-foundation/bifold-wallet",
+    "use_case": "Accessibility And Inclusion",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-orientation",
+      "quality_flags": [
+        "#q-accessible"
+      ]
+    },
+    "license": "Apache-2.0",
+    "attribution": "Bifold Wallet design guidelines, OpenWallet Foundation, Apache-2.0 (https://www.apache.org/licenses/LICENSE-2.0)",
+    "image": "images/bifold--acc06-progress-indication-during-a-trust-operation.png"
+  },
+  {
+    "slug": "eudi-arf--mob03-identification-method-options-pin-pattern-biometrics",
+    "title": "Identification method options: PIN, pattern, biometrics, password, OTP",
+    "origin_party": "EUDI ARF",
+    "origin_url": "https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework",
+    "use_case": "Mobile Authentication",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-orientation",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/eudi-arf--mob03-identification-method-options-pin-pattern-biometrics.png"
+  },
+  {
+    "slug": "nl-wallet--rel07-organisation-detail-who-is-asking-and-what-is-known",
+    "title": "Organisation detail: who is asking and what is known about them",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Relying Party Trust",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [
+        "#mech-provenance"
+      ],
+      "regulatory": [],
+      "trust_moment": "#tm-counterparty",
+      "quality_flags": []
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--rel07-organisation-detail-who-is-asking-and-what-is-known.png"
+  },
+  {
+    "slug": "nl-wallet--tra01-transaction-history-overview",
+    "title": "Transaction history overview",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Transaction History Audit",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [
+        "#mech-audit"
+      ],
+      "regulatory": [],
+      "trust_moment": "#tm-retrospection",
+      "quality_flags": []
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--tra01-transaction-history-overview.png"
+  },
+  {
+    "slug": "eudi-arf--rec01-credential-expiry-warning-with-renew-call-to-action",
+    "title": "Credential expiry warning with renew call-to-action",
+    "origin_party": "EUDI ARF",
+    "origin_url": "https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework",
+    "use_case": "Recovery Revocation Errors",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [
+        "#pat-three-state"
+      ],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-repair",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/eudi-arf--rec01-credential-expiry-warning-with-renew-call-to-action.png"
+  },
+  {
+    "slug": "nl-wallet--tra04-history-entry-for-a-cancelled-transaction",
+    "title": "History entry for a cancelled transaction",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Transaction History Audit",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [],
+      "patterns": [],
+      "mechanisms": [
+        "#mech-audit"
+      ],
+      "regulatory": [],
+      "trust_moment": "#tm-retrospection",
+      "quality_flags": []
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--tra04-history-entry-for-a-cancelled-transaction.png"
+  },
+  {
+    "slug": "nl-wallet--wal11-requested-attributes-the-wallet-cannot-supply",
+    "title": "Requested attributes the wallet cannot supply",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Wallet Consent Disclosure",
+    "facets": {
+      "domain": "#dom-wallet",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-repair",
+      "quality_flags": []
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--wal11-requested-attributes-the-wallet-cannot-supply.png"
+  },
+  {
+    "slug": "c2pa-ux-guidance--fig11-provenance-summary-at-four-manifests-showing-the",
+    "title": "Provenance summary at four manifests, showing the collapse rule",
+    "origin_party": "C2PA UX Guidance",
+    "origin_url": "https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf",
+    "use_case": "L2 Provenance Summaries",
+    "facets": {
+      "domain": "#dom-provenance",
+      "verdict": "#verdict-exemplar",
+      "modality": [],
+      "patterns": [
+        "#pat-timeline"
+      ],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-orientation",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/c2pa-ux-guidance--fig11-provenance-summary-at-four-manifests-showing-the.png"
+  },
+  {
+    "slug": "nl-wallet--wal13-review-a-credential-before-adding-it-to-the-wallet",
+    "title": "Review a credential before adding it to the wallet",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Wallet Onboarding Issuance",
+    "facets": {
+      "domain": "#dom-wallet",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-comprehension",
+      "quality_flags": []
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--wal13-review-a-credential-before-adding-it-to-the-wallet.png"
+  },
+  {
+    "slug": "nl-wallet--tra05-per-credential-usage-history",
+    "title": "Per-credential usage history",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Transaction History Audit",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [
+        "#mech-audit"
+      ],
+      "regulatory": [],
+      "trust_moment": "#tm-retrospection",
+      "quality_flags": []
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--tra05-per-credential-usage-history.png"
+  },
+  {
+    "slug": "eudi-arf--wal02-relying-party-login-with-eudi-wallet-desktop",
+    "title": "Relying-party login with EUDI wallet, desktop",
+    "origin_party": "EUDI ARF",
+    "origin_url": "https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework",
+    "use_case": "Wallet Onboarding Issuance",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-desktop"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-issuance",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/eudi-arf--wal02-relying-party-login-with-eudi-wallet-desktop.png"
+  },
+  {
+    "slug": "nl-wallet--wal14-reviewing-attributes-across-multiple-cards",
+    "title": "Reviewing attributes across multiple cards",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Wallet Consent Disclosure",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [
+        "#pat-selective-disclosure"
+      ],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-comprehension",
+      "quality_flags": []
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--wal14-reviewing-attributes-across-multiple-cards.png"
+  },
+  {
+    "slug": "nl-wallet--rec11-session-expired-during-disclosure",
+    "title": "Session expired during disclosure",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Recovery Revocation Errors",
+    "facets": {
+      "domain": "#dom-wallet",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-repair",
+      "quality_flags": []
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--rec11-session-expired-during-disclosure.png"
+  },
+  {
+    "slug": "it-wallet--rec07-revoking-an-attestation-from-the-wallet",
+    "title": "Revoking an attestation from the wallet",
+    "origin_party": "IT Wallet",
+    "origin_url": "https://github.com/italia/eid-wallet-it-docs",
+    "use_case": "Recovery Revocation Errors",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [],
+      "patterns": [],
+      "mechanisms": [
+        "#mech-recovery"
+      ],
+      "regulatory": [],
+      "trust_moment": "#tm-custody",
+      "quality_flags": []
+    },
+    "license": "CC0-1.0",
+    "attribution": "IT-Wallet Technical Specifications, Dipartimento per la trasformazione digitale, CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)",
+    "image": "images/it-wallet--rec07-revoking-an-attestation-from-the-wallet.png"
+  },
+  {
+    "slug": "nl-wallet--wal11-wallet-dashboard-populated",
+    "title": "Wallet dashboard, populated",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Wallet Onboarding Issuance",
+    "facets": {
+      "domain": "#dom-wallet",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-orientation",
+      "quality_flags": []
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--wal11-wallet-dashboard-populated.png"
+  },
+  {
+    "slug": "aries-vcr--cre01-public-credential-registry-entry-with-verified-badge",
+    "title": "Public credential registry entry with verified badge and annotated anatomy",
+    "origin_party": "Aries VCR",
+    "origin_url": "https://github.com/bcgov/aries-vcr",
+    "use_case": "Credential Registry And Issuers",
+    "facets": {
+      "domain": "#dom-ssi",
+      "verdict": "#verdict-exemplar",
+      "modality": [],
+      "patterns": [],
+      "mechanisms": [
+        "#mech-provenance",
+        "#mech-audit"
+      ],
+      "regulatory": [],
+      "trust_moment": "#tm-retrospection",
+      "quality_flags": []
+    },
+    "license": "Apache-2.0",
+    "attribution": "Aries VCR / OrgBook BC, Province of British Columbia, Apache-2.0 (https://www.apache.org/licenses/LICENSE-2.0)",
+    "image": "images/aries-vcr--cre01-public-credential-registry-entry-with-verified-badge.png"
+  },
+  {
+    "slug": "nl-wallet--rec16-no-connectivity",
+    "title": "No connectivity",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Recovery Revocation Errors",
+    "facets": {
+      "domain": "#dom-wallet",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-repair",
+      "quality_flags": []
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--rec16-no-connectivity.png"
+  },
+  {
+    "slug": "nl-wallet--tra03-history-entry-recording-that-nothing-was-shared",
+    "title": "History entry recording that nothing was shared",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Transaction History Audit",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [],
+      "patterns": [],
+      "mechanisms": [
+        "#mech-audit"
+      ],
+      "regulatory": [],
+      "trust_moment": "#tm-retrospection",
+      "quality_flags": []
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--tra03-history-entry-recording-that-nothing-was-shared.png"
+  },
+  {
+    "slug": "c2pa-ux-guidance--fig17-l3-tree-view-selectable-manifests-with-assertion",
+    "title": "L3 tree view, selectable manifests with assertion panel",
+    "origin_party": "C2PA UX Guidance",
+    "origin_url": "https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf",
+    "use_case": "L3 Detail And Repair",
+    "facets": {
+      "domain": "#dom-provenance",
+      "modality": [],
+      "patterns": [
+        "#pat-timeline"
+      ],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-comprehension",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/c2pa-ux-guidance--fig17-l3-tree-view-selectable-manifests-with-assertion.png"
+  },
+  {
+    "slug": "bc-wallet--wal20-notification-example",
+    "title": "Notification example",
+    "origin_party": "BC Wallet",
+    "origin_url": "https://github.com/bcgov/bc-wallet-mobile",
+    "use_case": "Wallet Visual Language",
+    "facets": {
+      "domain": "#dom-wallet",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [
+        "#mech-warning-budget"
+      ],
+      "regulatory": [],
+      "trust_moment": "#tm-repair",
+      "quality_flags": []
+    },
+    "license": "Apache-2.0",
+    "attribution": "BC Wallet, Province of British Columbia, Apache-2.0 (https://www.apache.org/licenses/LICENSE-2.0)",
+    "image": "images/bc-wallet--wal20-notification-example.png"
+  },
+  {
+    "slug": "nl-wallet--tra06-privacy-explainer-sheet-for-card-data",
+    "title": "Privacy explainer sheet for card data",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Transaction History Audit",
+    "facets": {
+      "domain": "#dom-wallet",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-custody",
+      "quality_flags": []
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--tra06-privacy-explainer-sheet-for-card-data.png"
+  },
+  {
+    "slug": "nl-wallet--tra02-transaction-receipt-what-was-shared-with-whom-when-a",
+    "title": "Transaction receipt: what was shared, with whom, when and why",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Transaction History Audit",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [
+        "#mech-audit"
+      ],
+      "regulatory": [],
+      "trust_moment": "#tm-retrospection",
+      "quality_flags": []
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--tra02-transaction-receipt-what-was-shared-with-whom-when-a.png"
+  },
+  {
+    "slug": "eudi-arf--rel01-untrusted-relying-party-alert-with-report-action",
+    "title": "Untrusted relying-party alert with report action",
+    "origin_party": "EUDI ARF",
+    "origin_url": "https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework",
+    "use_case": "Relying Party Trust",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [
+        "#pat-three-state"
+      ],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-counterparty",
+      "quality_flags": [
+        "#q-spoofresistant"
+      ]
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/eudi-arf--rel01-untrusted-relying-party-alert-with-report-action.png"
+  },
+  {
+    "slug": "c2pa-ux-guidance--fig21-update-manifest-without-thumbnail",
+    "title": "Update manifest without thumbnail",
+    "origin_party": "C2PA UX Guidance",
+    "origin_url": "https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf",
+    "use_case": "L3 Detail And Repair",
+    "facets": {
+      "domain": "#dom-provenance",
+      "modality": [],
+      "patterns": [],
+      "mechanisms": [
+        "#mech-audit"
+      ],
+      "regulatory": [],
+      "trust_moment": "#tm-retrospection",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/c2pa-ux-guidance--fig21-update-manifest-without-thumbnail.png"
+  },
+  {
+    "slug": "swiyu--wal09-swiss-e-id-credential-card-art",
+    "title": "Swiss e-ID credential card art",
+    "origin_party": "swiyu",
+    "origin_url": "https://github.com/swiyu-admin-ch/eidch-android-wallet",
+    "use_case": "Wallet Visual Language",
+    "facets": {
+      "domain": "#dom-wallet",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-orientation",
+      "quality_flags": []
+    },
+    "license": "MIT",
+    "attribution": "swiyu Swiss e-ID wallet, Swiss Confederation, MIT (https://opensource.org/licenses/MIT)",
+    "image": "images/swiyu--wal09-swiss-e-id-credential-card-art.png"
+  },
+  {
+    "slug": "nl-wallet--wal15-choosing-between-alternative-credentials-that-satisf",
+    "title": "Choosing between alternative credentials that satisfy the same request",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Wallet Consent Disclosure",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [
+        "#pat-selective-disclosure"
+      ],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-disclosure",
+      "quality_flags": []
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--wal15-choosing-between-alternative-credentials-that-satisf.png"
+  },
+  {
+    "slug": "nl-wallet--wal12-verify-the-issuing-organisation-before-accepting-a-c",
+    "title": "Verify the issuing organisation before accepting a credential",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Wallet Onboarding Issuance",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [
+        "#mech-provenance"
+      ],
+      "regulatory": [],
+      "trust_moment": "#tm-issuance",
+      "quality_flags": []
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--wal12-verify-the-issuing-organisation-before-accepting-a-c.png"
+  },
+  {
+    "slug": "nl-wallet--wal16-check-the-pid-data-being-issued-during-wallet-person",
+    "title": "Check the PID data being issued during wallet personalisation",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Wallet Onboarding Issuance",
+    "facets": {
+      "domain": "#dom-wallet",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-comprehension",
+      "quality_flags": []
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--wal16-check-the-pid-data-being-issued-during-wallet-person.png"
+  },
+  {
+    "slug": "c2pa-ux-guidance--fig27-l3-thumbnail-labels",
+    "title": "L3 thumbnail labels",
+    "origin_party": "C2PA UX Guidance",
+    "origin_url": "https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf",
+    "use_case": "Ai Content Disclosure",
+    "facets": {
+      "domain": "#dom-aitrust",
+      "modality": [],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-comprehension",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/c2pa-ux-guidance--fig27-l3-thumbnail-labels.png"
+  },
+  {
+    "slug": "c2pa-ux-guidance--fig28-l3-manifest-panel-with-description",
+    "title": "L3 manifest panel with description",
+    "origin_party": "C2PA UX Guidance",
+    "origin_url": "https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf",
+    "use_case": "Ai Content Disclosure",
+    "facets": {
+      "domain": "#dom-aitrust",
+      "modality": [],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-comprehension",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/c2pa-ux-guidance--fig28-l3-manifest-panel-with-description.png"
+  },
+  {
+    "slug": "c2pa-ux-guidance--fig30-l3-labeled-tree-view",
+    "title": "L3 labeled tree view",
+    "origin_party": "C2PA UX Guidance",
+    "origin_url": "https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf",
+    "use_case": "Ai Content Disclosure",
+    "facets": {
+      "domain": "#dom-aitrust",
+      "modality": [],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-comprehension",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/c2pa-ux-guidance--fig30-l3-labeled-tree-view.png"
+  },
+  {
+    "slug": "bifold--acc04-left-to-right-and-right-to-left-rendering-side-by-si",
+    "title": "Left-to-right and right-to-left rendering side by side",
+    "origin_party": "Bifold",
+    "origin_url": "https://github.com/openwallet-foundation/bifold-wallet",
+    "use_case": "Accessibility And Inclusion",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-orientation",
+      "quality_flags": [
+        "#q-accessible"
+      ]
+    },
+    "license": "Apache-2.0",
+    "attribution": "Bifold Wallet design guidelines, OpenWallet Foundation, Apache-2.0 (https://www.apache.org/licenses/LICENSE-2.0)",
+    "image": "images/bifold--acc04-left-to-right-and-right-to-left-rendering-side-by-si.png"
+  },
+  {
+    "slug": "nl-wallet--mob10-pin-confirmation-as-the-act-of-consent",
+    "title": "PIN confirmation as the act of consent",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Mobile Authentication",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-disclosure",
+      "quality_flags": [
+        "#q-spoofresistant"
+      ]
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--mob10-pin-confirmation-as-the-act-of-consent.png"
+  },
+  {
+    "slug": "l2-provenance-summaries--c2pa-fig13",
+    "title": "Multiple origins plus manifests",
+    "origin_party": "C2PA",
+    "origin_url": "https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf",
+    "use_case": "L2 provenance summaries",
+    "facets": {
+      "domain": "#dom-provenance",
+      "modality": [],
+      "patterns": [
+        "#pat-timeline"
+      ],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-comprehension",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "C2PA User Experience Guidance for Implementers, CC BY 4.0",
+    "image": "images/l2-provenance-summaries--c2pa-fig13.png"
+  },
+  {
+    "slug": "l2-provenance-summaries--c2pa-fig14",
+    "title": "Customized combinatory summaries by vertical",
+    "origin_party": "C2PA",
+    "origin_url": "https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf",
+    "use_case": "L2 provenance summaries",
+    "facets": {
+      "domain": "#dom-provenance",
+      "modality": [],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-comprehension",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "C2PA User Experience Guidance for Implementers, CC BY 4.0",
+    "image": "images/l2-provenance-summaries--c2pa-fig14.png"
+  },
+  {
+    "slug": "nl-wallet--rec14-pin-recovery-blocked-because-the-identity-does-not-m",
+    "title": "PIN recovery blocked because the identity does not match",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Recovery Revocation Errors",
+    "facets": {
+      "domain": "#dom-wallet",
+      "modality": [],
+      "patterns": [],
+      "mechanisms": [
+        "#mech-recovery"
+      ],
+      "regulatory": [],
+      "trust_moment": "#tm-repair",
+      "quality_flags": [
+        "#q-spoofresistant"
+      ]
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--rec14-pin-recovery-blocked-because-the-identity-does-not-m.png"
+  },
+  {
+    "slug": "nl-wallet--wal14-review-new-and-updated-credentials-together",
+    "title": "Review new and updated credentials together",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Wallet Onboarding Issuance",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [
+        "#pat-before-after"
+      ],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-issuance",
+      "quality_flags": []
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--wal14-review-new-and-updated-credentials-together.png"
+  },
+  {
+    "slug": "eudi-arf--wal03-attribute-label-conventions",
+    "title": "Attribute label conventions",
+    "origin_party": "EUDI ARF",
+    "origin_url": "https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework",
+    "use_case": "Wallet Consent Disclosure",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-comprehension",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/eudi-arf--wal03-attribute-label-conventions.png"
+  },
+  {
+    "slug": "nl-wallet--rec13-pin-recovery-entry-point",
+    "title": "PIN recovery, entry point",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Recovery Revocation Errors",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [
+        "#mech-recovery"
+      ],
+      "regulatory": [],
+      "trust_moment": "#tm-repair",
+      "quality_flags": []
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--rec13-pin-recovery-entry-point.png"
+  },
+  {
+    "slug": "cai-verify--pro03-unknown-source-warning-chip",
+    "title": "Unknown-source warning chip",
+    "origin_party": "CAI Verify",
+    "origin_url": "https://github.com/contentauth/opensource.contentauth.org",
+    "use_case": "Provenance Display Implementations",
+    "facets": {
+      "domain": "#dom-aitrust",
+      "verdict": "#verdict-exemplar",
+      "modality": [],
+      "patterns": [
+        "#pat-three-state"
+      ],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-repair",
+      "quality_flags": [
+        "#q-spoofresistant"
+      ]
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "Content Authenticity Initiative open-source documentation, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/cai-verify--pro03-unknown-source-warning-chip.png"
+  },
+  {
+    "slug": "cai-verify--pro02-content-summary-card-issuer-date-process-and-ai-tool",
+    "title": "Content summary card: issuer, date, process and AI tool used",
+    "origin_party": "CAI Verify",
+    "origin_url": "https://github.com/contentauth/opensource.contentauth.org",
+    "use_case": "Provenance Display Implementations",
+    "facets": {
+      "domain": "#dom-aitrust",
+      "verdict": "#verdict-exemplar",
+      "modality": [],
+      "patterns": [],
+      "mechanisms": [
+        "#mech-provenance"
+      ],
+      "regulatory": [],
+      "trust_moment": "#tm-comprehension",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "Content Authenticity Initiative open-source documentation, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/cai-verify--pro02-content-summary-card-issuer-date-process-and-ai-tool.png"
+  },
+  {
+    "slug": "eudi-arf--mob01-incorrect-credentials-entry",
+    "title": "Incorrect credentials entry",
+    "origin_party": "EUDI ARF",
+    "origin_url": "https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework",
+    "use_case": "Mobile Authentication",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-repair",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/eudi-arf--mob01-incorrect-credentials-entry.png"
+  },
+  {
+    "slug": "logingov--pra06-logo-usage-guidelines",
+    "title": "Logo usage guidelines",
+    "origin_party": "Login.gov",
+    "origin_url": "https://github.com/18F/identity-dev-docs",
+    "use_case": "Prescriptive Practices",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-orientation",
+      "quality_flags": [
+        "#q-accessible"
+      ]
+    },
+    "license": "CC0-1.0",
+    "attribution": "Login.gov developer documentation, GSA/18F, CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)",
+    "image": "images/logingov--pra06-logo-usage-guidelines.png"
+  },
+  {
+    "slug": "nl-wallet--pro06-presenting-a-qr-code-for-proximity-engagement",
+    "title": "Presenting a QR code for proximity engagement",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Proximity Cross Device",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-execution",
+      "quality_flags": []
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--pro06-presenting-a-qr-code-for-proximity-engagement.png"
+  },
+  {
+    "slug": "eudi-arf--mob02-repeated-failed-authentication-with-lock-out-timer",
+    "title": "Repeated failed authentication with lock-out timer",
+    "origin_party": "EUDI ARF",
+    "origin_url": "https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework",
+    "use_case": "Mobile Authentication",
+    "facets": {
+      "domain": "#dom-wallet",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-repair",
+      "quality_flags": [
+        "#q-spoofresistant"
+      ]
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/eudi-arf--mob02-repeated-failed-authentication-with-lock-out-timer.png"
+  },
+  {
+    "slug": "eudi-arf--rec05-error-message-construction",
+    "title": "Error message construction",
+    "origin_party": "EUDI ARF",
+    "origin_url": "https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework",
+    "use_case": "Recovery Revocation Errors",
+    "facets": {
+      "domain": "#dom-wallet",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-repair",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/eudi-arf--rec05-error-message-construction.png"
+  },
+  {
+    "slug": "it-wallet--pro04-remote-presentation-cross-device",
+    "title": "Remote presentation, cross device",
+    "origin_party": "IT Wallet",
+    "origin_url": "https://github.com/italia/eid-wallet-it-docs",
+    "use_case": "Proximity Cross Device",
+    "facets": {
+      "domain": "#dom-wallet",
+      "modality": [
+        "#mod-mobile",
+        "#mod-desktop"
+      ],
+      "patterns": [
+        "#pat-timeline"
+      ],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-execution",
+      "quality_flags": []
+    },
+    "license": "CC0-1.0",
+    "attribution": "IT-Wallet Technical Specifications, Dipartimento per la trasformazione digitale, CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)",
+    "image": "images/it-wallet--pro04-remote-presentation-cross-device.png"
+  },
+  {
+    "slug": "it-wallet--rec08-wallet-deactivation",
+    "title": "Wallet deactivation",
+    "origin_party": "IT Wallet",
+    "origin_url": "https://github.com/italia/eid-wallet-it-docs",
+    "use_case": "Recovery Revocation Errors",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [],
+      "patterns": [],
+      "mechanisms": [
+        "#mech-recovery"
+      ],
+      "regulatory": [],
+      "trust_moment": "#tm-custody",
+      "quality_flags": []
+    },
+    "license": "CC0-1.0",
+    "attribution": "IT-Wallet Technical Specifications, Dipartimento per la trasformazione digitale, CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)",
+    "image": "images/it-wallet--rec08-wallet-deactivation.png"
+  },
+  {
+    "slug": "nl-wallet--rec12-dashboard-with-credential-expiring-in-10-days",
+    "title": "Dashboard with credential expiring in 10 days",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Recovery Revocation Errors",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [
+        "#pat-three-state"
+      ],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-repair",
+      "quality_flags": []
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--rec12-dashboard-with-credential-expiring-in-10-days.png"
+  },
+  {
+    "slug": "c2pa-ux-guidance--fig18-compare-state-two-manifest-thumbnails-side-by-si",
+    "title": "Compare state, two manifest thumbnails side by side",
+    "origin_party": "C2PA UX Guidance",
+    "origin_url": "https://spec.c2pa.org/specifications/specifications/2.0/ux/_attachments/UX_Recommendations.pdf",
+    "use_case": "L3 Detail And Repair",
+    "facets": {
+      "domain": "#dom-provenance",
+      "verdict": "#verdict-exemplar",
+      "modality": [],
+      "patterns": [
+        "#pat-before-after"
+      ],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-orientation",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "C2PA User Experience Guidance for Implementers, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/c2pa-ux-guidance--fig18-compare-state-two-manifest-thumbnails-side-by-si.png"
+  },
+  {
+    "slug": "nl-wallet--rel05-verify-the-relying-party-s-url-before-disclosing",
+    "title": "Verify the relying party's URL before disclosing",
+    "origin_party": "NL Wallet",
+    "origin_url": "https://github.com/MinBZK/nl-wallet",
+    "use_case": "Relying Party Trust",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-counterparty",
+      "quality_flags": [
+        "#q-spoofresistant"
+      ]
+    },
+    "license": "EUPL-1.2",
+    "attribution": "NL Wallet, (c) Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, EUPL-1.2 (https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)",
+    "image": "images/nl-wallet--rel05-verify-the-relying-party-s-url-before-disclosing.png"
+  },
+  {
+    "slug": "cai-verify--pro01-full-three-panel-content-credentials-inspector",
+    "title": "Full three-panel Content Credentials inspector",
+    "origin_party": "CAI Verify",
+    "origin_url": "https://github.com/contentauth/opensource.contentauth.org",
+    "use_case": "Provenance Display Implementations",
+    "facets": {
+      "domain": "#dom-aitrust",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-desktop"
+      ],
+      "patterns": [
+        "#pat-progressive-disclosure"
+      ],
+      "mechanisms": [
+        "#mech-provenance"
+      ],
+      "regulatory": [],
+      "trust_moment": "#tm-comprehension",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "Content Authenticity Initiative open-source documentation, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/cai-verify--pro01-full-three-panel-content-credentials-inspector.png"
+  },
+  {
+    "slug": "eudi-arf--mob05-flexible-input-handling",
+    "title": "Flexible input handling",
+    "origin_party": "EUDI ARF",
+    "origin_url": "https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework",
+    "use_case": "Mobile Authentication",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-orientation",
+      "quality_flags": []
+    },
+    "license": "CC-BY-4.0",
+    "attribution": "EU Digital Identity Wallet Architecture and Reference Framework, (c) European Commission, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "image": "images/eudi-arf--mob05-flexible-input-handling.png"
+  },
+  {
+    "slug": "it-wallet--mob08-authentication-same-device",
+    "title": "Authentication, same device",
+    "origin_party": "IT Wallet",
+    "origin_url": "https://github.com/italia/eid-wallet-it-docs",
+    "use_case": "Mobile Authentication",
+    "facets": {
+      "domain": "#dom-wallet",
+      "verdict": "#verdict-exemplar",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-orientation",
+      "quality_flags": []
+    },
+    "license": "CC0-1.0",
+    "attribution": "IT-Wallet Technical Specifications, Dipartimento per la trasformazione digitale, CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)",
+    "image": "images/it-wallet--mob08-authentication-same-device.png"
+  },
+  {
+    "slug": "it-wallet--pro03-remote-presentation-same-device",
+    "title": "Remote presentation, same device",
+    "origin_party": "IT Wallet",
+    "origin_url": "https://github.com/italia/eid-wallet-it-docs",
+    "use_case": "Proximity Cross Device",
+    "facets": {
+      "domain": "#dom-wallet",
+      "modality": [
+        "#mod-mobile"
+      ],
+      "patterns": [
+        "#pat-timeline"
+      ],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-execution",
+      "quality_flags": []
+    },
+    "license": "CC0-1.0",
+    "attribution": "IT-Wallet Technical Specifications, Dipartimento per la trasformazione digitale, CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)",
+    "image": "images/it-wallet--pro03-remote-presentation-same-device.png"
+  },
+  {
+    "slug": "nccoe-mdl--mdl07-regenerated-qr-code-after-timeout",
+    "title": "Regenerated QR code after timeout",
+    "origin_party": "NIST NCCoE mDL",
+    "origin_url": "https://github.com/usnistgov/nccoe-mdl-project-static-website",
+    "use_case": "Mdl Usability Evidence",
+    "facets": {
+      "domain": "#dom-mdl",
+      "verdict": "#verdict-antipattern",
+      "modality": [
+        "#mod-mobile",
+        "#mod-desktop"
+      ],
+      "patterns": [],
+      "mechanisms": [],
+      "regulatory": [],
+      "trust_moment": "#tm-orientation",
+      "quality_flags": []
+    },
+    "license": "US-Gov-PD",
+    "attribution": "NIST National Cybersecurity Center of Excellence, mDL project",
+    "image": "images/nccoe-mdl--mdl07-regenerated-qr-code-after-timeout.png"
+  }
+]
