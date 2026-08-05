@@ -25,12 +25,9 @@ repository and serve with GitHub Pages. No server, no build step.
 | `.nojekyll` | Tells GitHub Pages to serve every file as-is. |
 
 ## View it as a web page (GitHub Pages)
-1. Commit this folder to a GitHub repository and push it.
-2. In the repo, open **Settings → Pages**.
-3. Under **Build and deployment → Source**, choose **Deploy from a branch**.
-4. Pick your branch and folder **/ (root)**, then **Save**.
-5. After ~1 minute the URL appears; `index.html` (the explorer) is the home page:
-   `https://<your-org>.github.io/<your-repo>/trust-experience-snapshot-2026-08-04/` — or the repo root if you put the contents there.
+
+Click here to view the recent snapshot as a web page: 
+https://trustoverip.github.io/dtgwg-htx-tf/trust-experience-snapshot-2026-08-04/index.html
 
 Locally, just open `index.html` in a browser — it works offline.
 
