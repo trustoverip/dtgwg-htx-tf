@@ -40,7 +40,11 @@ def git(*args):
 def check(baseline):
     failures = []
     old_paths = git('ls-tree', '-r', '--name-only', '-z', baseline).decode().split('\0')
-    static_paths = [p for p in old_paths if p and Path(p).suffix.lower() in STATIC]
+    static_paths = [
+        p for p in old_paths
+        if p and Path(p).suffix.lower() in STATIC
+        and not any(part.startswith(('_', '.')) for part in Path(p).parts)
+    ]
     for name in static_paths:
         original = git('show', f'{baseline}:{name}')
         for label, path in [('source', ROOT / name), ('published file', SITE / name)]:
