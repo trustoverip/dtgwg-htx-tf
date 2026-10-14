@@ -11,6 +11,7 @@ A practical starting point for discussing trust and designing interactions that 
 
 The HTX Task Force designs the conditions, patterns and practices from which a healthy and safe human trust experience can emerge and be operated.
 
+ 
 
 **Edition 1 · 14 October 2026 · Proposed guidance**
 
