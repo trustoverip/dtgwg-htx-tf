@@ -1,0 +1,56 @@
+# Keep GitHub Pages publishing from main / (root).
+# The theme is pinned to Just the Docs v0.12.0.
+remote_theme: just-the-docs/just-the-docs@2ed4c0af735e95af5c0dcf7a605b07d903005b4e
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-seo-tag
+
+title: Human Trust Experience
+description: Trust taxonomy, HDX pattern catalogue and task-force resources
+url: https://trustoverip.github.io
+baseurl: /dtgwg-htx-tf
+repository: trustoverip/dtgwg-htx-tf
+lang: en
+
+# Only new documentation receives the theme layout by default.
+# Existing standalone HTML files remain static files.
+defaults:
+  - scope:
+      path: ""
+    values:
+      nav_exclude: true
+      search_exclude: true
+  - scope:
+      path: docs
+    values:
+      layout: default
+      nav_exclude: false
+      search_exclude: false
+
+search_enabled: true
+heading_anchors: true
+enable_copy_code_button: true
+back_to_top: true
+back_to_top_text: Back to top
+aux_links:
+  All resources:
+    - /dtgwg-htx-tf/
+  GitHub:
+    - https://github.com/trustoverip/dtgwg-htx-tf
+
+gh_edit_link: true
+gh_edit_link_text: Edit this page on GitHub
+gh_edit_repository: https://github.com/trustoverip/dtgwg-htx-tf
+gh_edit_branch: main
+# page.path already includes docs/ because the build starts at the root.
+gh_edit_view_mode: edit
+
+exclude:
+  - README.md
+  - scripts
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - .jekyll-cache
