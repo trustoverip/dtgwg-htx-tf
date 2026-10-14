@@ -5,6 +5,40 @@ nav_order: 0
 nav_exclude: true
 search_exclude: true
 ---
+<style>
+.trust-logos {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 20px 0;
+}
+
+.trust-logos img {
+  width: 96px;
+  height: auto;
+  display: block;
+  filter: grayscale(100%);
+  opacity: 0.65;
+  transition: filter 0.25s ease, opacity 0.25s ease;
+}
+
+.trust-logos img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+</style>
+
+<div class="trust-logos">
+  <img
+    src="https://validant.ai/assets/dif-logo-Bw0br3cJ.png"
+    alt="Decentralized Identity Foundation"
+    width="96">
+  <img
+    src="https://validant.ai/assets/toip-logo-DpaP3NEL.png"
+    alt="Trust Over IP"
+    width="96">
+</div>
+
 # Human Trust Experience
 
 Working material from the Human Trust Experience Task Force.
