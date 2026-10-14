@@ -1,0 +1,55 @@
+Copy from the first --- below to the end, and save it as a .md file in docs/patterns/.
+
+---
+layout: default
+title: "PXX.01 Verb-led pattern title"
+parent: HDX pattern catalogue
+nav_order: 10
+permalink: /docs/patterns/pxx-01/
+pattern_id: PXX.01
+family: PXX
+publication_status: proposed
+implementation_status: not implemented
+evaluation_status: untested
+---
+
+# PXX.01 Verb-led pattern title
+
+## 1 Record
+Family, version, date, owner and separate publication, implementation and evaluation status.
+
+## 2 Context and problem
+Actor, trigger, goal, vulnerability and recurring difficulty. Preconditions, when to use and exclusions.
+
+## 3 Solution and rationale
+Core behavior, meaningful choices and safe exits. Explain why it addresses the problem.
+
+## 4 Flow and states
+
+| State or event | System behavior and available next action |
+| --- | --- |
+| Entry | ... |
+| Success | ... |
+| Refusal, failure or interruption | ... |
+| Recovery | ... |
+
+## 5 UI and content
+What the person sees and can do; example wording, components and prototype links.
+
+## 6 Assurance and dependencies
+Required evidence, source, binding, freshness, status and limits. Required services and enforcement.
+
+## 7 Linked concepts
+Moment IDs, task and ceremony specifications and versions where known, related patterns.
+
+## 8 Accessibility and privacy
+Accessible alternatives, cognitive burden, stressful use, disclosure and retention.
+
+## 9 Evaluation
+Scenarios, method, success criteria, findings and limitations. Label a plan as a plan.
+
+## 10 Operations and economics
+Responsibilities, support, constraints, benefits, costs and unresolved decisions.
+
+## Sources
+Link the primary evidence and identify the version reviewed.
