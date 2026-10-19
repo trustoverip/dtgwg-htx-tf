@@ -2,9 +2,10 @@
 
 Research, onboarding resources and proposed guidance for human experience design in digital trust.
 
-- [Website and existing resources](https://trustoverip.github.io/dtgwg-htx-tf/)
-- [Taxonomy and HDX pattern catalogue](https://trustoverip.github.io/dtgwg-htx-tf/docs/)
-- [How to contribute](docs/contributing.md)
+
+📖 [Website and existing resources](https://trustoverip.github.io/dtgwg-htx-tf/)
+
+🧑‍💻 [How to contribute](docs/contributing.md)
 
 The new documentation contains the taxonomy analysis, 13 trust moments, 18 proposed pattern families, an authoring template and the completed P18.01 independent-confirmation example. Publication, implementation and evaluation status are separate; this is proposed guidance.
 
