@@ -33,6 +33,19 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   padding-bottom: 16px;
 }
 
+.htx-brand-logo {
+  display: block;
+  width: 160px;
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.2s ease;
+}
+
+.site-title:hover .htx-brand-logo,
+.site-title:focus-visible .htx-brand-logo {
+  opacity: 0.75;
+}
+
 .htx-brand {
   display: flex;
   flex-direction: column;
