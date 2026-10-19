@@ -11,6 +11,12 @@ Use this catalogue to select a human trust problem, define a reusable interactio
 
 [Use the pattern template]({{ '/docs/pattern-template/' | relative_url }}) or read [P18.01, the completed example]({{ '/docs/patterns/p18-01/' | relative_url }}). Definitions and derivation are in the [taxonomy analysis]({{ '/docs/taxonomy/' | relative_url }}).
 
+<p align="center">
+  <img src="{{ '/images/HDX_pattern_catalogue_18.png' | relative_url }}"
+       alt="HDX pattern catalogue"
+       width="900">
+</p>
+
 ## Family index
 
 | Family | Initial patterns to develop | Moments |
