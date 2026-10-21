@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://trustoverip.github.io/dtgwg-htx-tf/">
-    <img src="images/htx-logo.svg" alt="Human Trust Experience Task Force logo" width="180">
+    <img src="images/HTX_v0.1.svg" alt="HTX Human Trust Experience Task Force logo" width="360">
   </a>
 </p>
 
