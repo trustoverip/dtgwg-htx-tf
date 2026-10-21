@@ -88,9 +88,6 @@ The site is published with GitHub Pages.
 
 After each merge, check that the Pages deployment succeeded and that both the new and the existing links still work.
 
-## Sources
-
-The initial documentation adapts *Digital Trust Taxonomy Analysis* and *HDX Pattern Catalogue*, edition 1 (14 October 2026), contributed by Daniel Glinz / validant.ai. See [Sources](docs/references.md) for all research references and their draft status.
 
 ## License
 
